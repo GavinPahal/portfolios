@@ -1,0 +1,17 @@
+.hero {
+  background: #863399;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.heroImage {
+  max-width: 800px; /* Adjust as needed to match the layout */
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,116 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh; /* Expands background to take up more space */
+  background-color: rgba(134, 51, 153, 1); /* Keep the original background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents scroll issues */
+  
+}
+
+.heroText h1 {
+  font-family: "philosopher";
+  margin-bottom:400px;
+  margin-right: 700px;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+.branchImage {
+  margin-top: 120px;
+  position: absolute;
+  right: -15%;  /* Move it slightly more off-screen to keep balance */
+  top: -40%;    /* Move it higher up */
+  width: auto;
+  height: 180vh; /* Keep it extremely large */
+  max-height: none;
+  animation: branchReveal 2s ease-in-out forwards;
+  transform: rotate(-80deg); /* Increased rotation angle */
+  transform-origin: top right; /* Ensures rotation pivots from the correct point */
+}
+
+
+
+/* Branch Animation */
+@keyframes branchReveal {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* For iPhone SE (small screen) */
+@media only screen and (max-width: 375px) {
+  .hero {
+    height: 90vh; /* Reduce height for smaller iPhone screens */
+  }
+
+  .heroText h1 {
+    font-size: 2.2rem; /* Adjust font size for smaller iPhone screens */
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 30px; /* Adjust bottom margin */
+    text-align: center; /* Center text */
+  }
+
+  .branchImage {
+    top: 0; /* Adjust branch position */
+    right: 0; /* Adjust for better placement */
+    height: 80vh; /* Reduce height */
+    width: auto;
+    transform: rotate(-20deg); /* Reduced rotation for better fit */
+  }
+}
+
+/* For iPhone 6/7/8 and iPhone X/XS/11/12/13 (medium screens) */
+@media only screen and (max-width: 414px) {
+  .hero {
+    height: 100vh; /* Set to full viewport height */
+  }
+
+  .heroText h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 50px; /* Adjust bottom margin */
+    text-align: center; /* Center text */
+  }
+
+  .branchImage {
+    top: 0; /* Adjust position */
+    right: 0; /* Adjust for full screen */
+    height: 120vh; /* Adjust height */
+    width: auto;
+    transform: rotate(-30deg); /* Adjust rotation for better placement */
+  }
+}
+
+/* For iPhone 12/13 Pro and larger (large screens) */
+@media only screen and (max-width: 460px) {
+  .hero {
+    height: 100vh; /* Full height */
+  }
+
+  .heroText h1 {
+    font-size: 3.5rem; /* Adjust font size */
+    margin-right: 0; /* No margin */
+    margin-bottom: 100px; /* Adjust bottom margin */
+    text-align: center; /* Center text */
+  }
+
+  .branchImage {
+    top: 0; /* Adjust position */
+    right: 0; /* Adjust for full screen */
+    height: 130vh; /* Slightly larger height */
+    width: auto;
+    transform: rotate(-40deg); /* Adjust rotation */
+  }
+}

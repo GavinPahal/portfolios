@@ -1,0 +1,189 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Philosopher";
+    padding: 0;
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 60px 0;
+}
+
+/* General Text Block Styling */
+.textBlock {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Project Overview Links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    text-decoration: underline;
+    color: black;
+    font-size: 16px;
+}
+
+/* Split Sections */
+.splitSection, .splitSectionReverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    gap: 30px;
+}
+
+.splitSectionReverse {
+    padding-bottom:50rem;
+    flex-direction: row-reverse;
+}
+
+/* Text Styling */
+.text {
+    width: 50%;
+}
+
+/* Image Placeholder */
+.imagePlaceholder, .Placeholder {
+    width: 45%;
+    height: 230px;
+    background: gray;
+    border-radius: 10px;
+    margin-left: 230px;
+}
+
+.img {
+    margin-left: 280px;
+    width: 45%;
+    height: 45%;
+    border-radius: 10px;
+}
+
+.imgs {
+    margin-left: 180px;
+    width: 55%;
+    height: 55%;
+    border-radius: 10px;
+}
+
+/* Centered Content */
+.center {
+    text-align: center;
+}
+
+/* Flow Chart */
+.flowChart {
+    width: 65%;
+    display: block;
+    margin: 30px auto;
+}
+
+/* Headings */
+.heading, .subheading {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px 0 15px;
+    color: #000000;
+}
+
+.heading {
+    text-align: center;
+}
+
+.subheading {
+    text-align: left;
+}
+
+/* Before/After Section */
+.beforeAfterContainer {
+    text-align: center;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.beforeAfterImage {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.beforeAfterButton {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.beforeAfterButton:hover {
+    background-color: darkpurple;
+}
+
+/* Challenges Section */
+.challengeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 50px 20px;
+}
+
+.challengeText {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.challengeImage {
+    width: 50%;
+    max-width: 420px;
+    transform: scaleX(-1); /* Flip image to face left */
+}
+
+/* Alternate Image Layout */
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Paragraph Styling */
+.p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+.caseStudyCarousel {
+    width: 100vw; /* Full screen width */
+    height: 50vh; /* Half the screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  black /* Adjust as needed */
+}

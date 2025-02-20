@@ -1,0 +1,42 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100rem; /* Large width for the carousel */
+  margin: 0 auto 40px; /* Center horizontally and add bottom spacing */
+  overflow: hidden;
+  border-radius: 8px; /* Slight rounding for a nice look */
+}
+
+/* The image inside the carousel */
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(77, 13, 13, 0.6); /* Semi-transparent dark pink */
+  color: #fff;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 2;
+  transition: background 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(77, 13, 13, 0.9);
+}
+
+.arrow:first-of-type {
+  left: 10px;
+}
+
+.arrow:last-of-type {
+  right: 10px;
+}

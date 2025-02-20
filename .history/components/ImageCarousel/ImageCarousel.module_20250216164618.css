@@ -1,0 +1,36 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .image {
+    height: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .arrow:first-of-type {
+    left: 10px;
+  }
+  
+  .arrow:last-of-type {
+    right: 10px;
+  }
+  

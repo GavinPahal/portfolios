@@ -1,0 +1,173 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 30px 0;
+  }
+  
+  .title {
+    font-family:  "Philosopher";
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px 0 40px;
+  }
+  
+  .heading {
+    font-family:  "Philosopher";
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0px 0 10px;
+    text-align: center;
+  }
+  
+  .subheading {
+    font-family:  "Philosopher";
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .video{
+    margin-left: 7rem;
+  }
+  .textBlock {
+    font-family: "Philosopher";
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 25px;
+    color: #000000;
+  }
+  
+  .links {
+    display: flex;
+    gap: 53rem;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  
+  .underline {
+    text-decoration: underline;
+    color: #863399;
+    font-weight: bold;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Large like your screenshot */
+    margin: 0 auto 30px;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(77, 13, 13, 0.6);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+  }
+  
+  .arrow:first-of-type {
+    left: 10px;
+  }
+  
+  .arrow:last-of-type {
+    right: 10px;
+  }
+  
+  .problemsChallengesContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 40px 0;
+  }
+  
+  .problemsBox,
+  .challengesBox {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .problemsBox {
+    margin-right: 10px;
+  }
+  
+  .challengesBox {
+    margin-left: 10px;
+  }
+  
+  
+  .solutionBox {
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
+  }
+  
+  .center {
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  .img, .imgs {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .flowChart {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+  }
+  
+  .beforeAfterContainer {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 30px auto;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: white;
+    cursor: ew-resize;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+  }
+  
+  .sliderCircle {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

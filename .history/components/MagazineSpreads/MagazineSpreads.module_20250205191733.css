@@ -1,0 +1,29 @@
+.spreads {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .h2 {
+    font-size: 28px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: 1fr;
+      max-width: 600px;
+    }
+  }
+  

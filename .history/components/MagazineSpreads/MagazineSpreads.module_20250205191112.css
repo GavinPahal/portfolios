@@ -1,0 +1,21 @@
+.spreads {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .img {
+    width: 300px;
+    height: auto;
+  }
+  

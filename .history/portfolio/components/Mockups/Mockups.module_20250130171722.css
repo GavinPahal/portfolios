@@ -1,0 +1,25 @@
+.mockups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+  }
+  
+  .imageContainer img {
+    width: 400px;
+  }
+  
+  .textContainer {
+    max-width: 500px;
+  }
+  
+  .textContainer h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .textContainer p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

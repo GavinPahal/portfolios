@@ -1,0 +1,40 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh; /* Expands background to take up more space */
+  background-color: rgba(134, 51, 153, 1); /* Keep the original background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents scroll issues */
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+.branchImage {
+  position: absolute;
+  right: 0; /* Keeps it aligned to the right */
+  top: -20%; /* Moves it higher */
+  width: auto;
+  height: 100vh; /* Matches the original size */
+  max-height: none; /* Removes any limits */
+  animation: branchReveal 2s ease-in-out forwards;
+}
+
+/* Branch Animation */
+@keyframes branchReveal {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

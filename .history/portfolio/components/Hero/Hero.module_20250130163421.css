@@ -1,0 +1,22 @@
+.hero {
+    background: #6c1b84;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .title {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .images img {
+    width: 200px;
+  }
+  

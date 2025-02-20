@@ -1,0 +1,48 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("/images/Group 6.png") center/cover no-repeat;
+  }
+  
+  .heroImage {
+    position: absolute;
+    width: 90%;
+    height: 45%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .heroText {
+    text-align: center;
+    color: white;
+    font-family: "Times New Roman", serif;
+  }
+  
+  .title {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .resumeButton {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .resumeButton:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+  }
+  

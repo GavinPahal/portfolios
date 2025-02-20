@@ -1,0 +1,68 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Carousel */
+  .carouselWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Text Blocks */
+  .textBlock {
+    margin: 40px 0;
+    padding: 20px;
+  }
+  
+  /* Flex Layout for Problems & Challenges */
+  .flexContainer {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .textBox {
+    width: 48%;
+    padding: 20px;
+    background: #f8e5eb;
+    border-radius: 10px;
+  }
+  
+  /* Center Logo Section */
+  .center {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .img {
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .flexContainer {
+      flex-direction: column;
+    }
+  
+    .textBox {
+      width: 100%;
+    }
+  
+    .logoContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

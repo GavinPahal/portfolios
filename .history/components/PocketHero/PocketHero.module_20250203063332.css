@@ -1,0 +1,22 @@
+.hero {
+    background: #863399;
+    text-align: center;
+
+  }
+  
+  .title {
+
+    text-align: center;
+    padding-top: 45px;
+    font-family: "philosopher", "bold";
+    color: white;
+    font-size: 80px;
+  }
+  
+  .heroImage {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+  }
+  

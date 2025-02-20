@@ -1,0 +1,73 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(134, 51, 153, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroText h1 {
+  font-family: "philosopher";
+  margin-bottom: 300px;
+  margin-right: 600px;
+  color: rgb(255, 255, 255);
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.branchImage {
+  position: absolute;
+  left: 10%; /* Adjust positioning to bring it closer to the apple */
+bottom:  30%; /* Adjust positioning to align with the apple */
+  width: 80%; /* Ensure it spans across the section */
+  height: auto;
+  transform: rotate(0deg); /* Fully horizontal */
+  transform-origin: center;
+  animation: branchReveal 2s ease-in-out forwards;
+}
+
+/* Updated Branch Animation */
+@keyframes branchReveal {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* Apple Vector Styling */
+.apple {
+  position: absolute;
+  top: 30%; /* Adjust to align with branch near "Pahal" */
+  right: 48%; /* Fine-tune position for accurate placement */
+  width: 80px; /* Adjust size */
+  height: auto;
+  opacity: 0;
+  transform: scale(0);
+  animation: growApple 1.5s ease-in-out 2s forwards;
+  cursor: pointer;
+}
+
+/* Apple Growing Animation */
+@keyframes growApple {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

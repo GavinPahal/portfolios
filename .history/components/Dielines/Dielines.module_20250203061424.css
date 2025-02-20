@@ -1,0 +1,25 @@
+.dielines {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .title {
+    text-align: center;
+    font-family: "philosopher", "bold";
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+  
+  .images {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  
+  .images img {
+    width: 90%;
+    max-width: 800px;
+  }
+  

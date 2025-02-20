@@ -1,0 +1,15 @@
+.spreads {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  img {
+    width: 300px;
+  }
+  

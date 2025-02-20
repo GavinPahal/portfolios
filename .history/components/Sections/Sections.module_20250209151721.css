@@ -1,0 +1,44 @@
+.sections {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .text {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  .splitSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  .splitSection h2 {
+    width: 40%;
+    font-size: 22px;
+  }
+  
+  .splitSection p {
+    width: 55%;
+    font-size: 16px;
+    text-align: justify;
+  }
+  
+  .logo, .flowChart {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    max-width: 400px;
+  }
+  

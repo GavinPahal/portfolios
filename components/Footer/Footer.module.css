@@ -1,0 +1,41 @@
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  border-top: 2px solid black;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-family: "philosopher", "bold";
+  font-size: 18px;
+  margin: 0; /* Aligns with the top border */
+  padding-left: 20px; /* Adds some spacing from the left */
+}
+
+.contact {
+  font-family: "philosopher", "bold";
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  padding-right: 20px; /* Adds some spacing from the right */
+}
+
+.icons {
+  display: flex;
+  gap: 10px; /* Ensures equal spacing between icons */
+  margin-left: 10px; /* Adds spacing between text and icons */
+}
+
+.icons img {
+  width: 30px;
+}

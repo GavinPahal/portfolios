@@ -1,0 +1,46 @@
+.description {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .image {
+    width: 40%;
+    max-width: 500px;
+  }
+  
+  .text {
+    max-width: 50%;
+  }
+  
+  .h2 {
+    font-size: 28px;
+  }
+  
+  .p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image {
+      width: 70%;
+    }
+  
+    .text {
+      max-width: 80%;
+    }
+  }
+  

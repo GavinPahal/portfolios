@@ -1,0 +1,32 @@
+.description {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .image {
+    width: 300px;
+    height: auto;
+  }
+  
+  .text {
+    max-width: 600px;
+  }
+  
+  .h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

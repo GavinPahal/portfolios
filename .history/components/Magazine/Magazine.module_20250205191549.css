@@ -1,0 +1,17 @@
+.hero {
+    background: #75298a;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: white;
+  }
+  
+  .img {
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  

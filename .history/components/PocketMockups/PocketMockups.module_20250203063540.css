@@ -1,0 +1,33 @@
+.mockups {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .textContainer {
+    margin-bottom: 150px;
+    margin-right:  200px;
+    max-width: 500px;
+  }
+  
+  .textContainer h2 {
+    font-family: "Philosopher";
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .textContainer p {
+    font-family: "Philosopher";
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,51 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  .textBlock {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .splitSection, .splitSectionReverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
+  
+  .splitSectionReverse {
+    flex-direction: row-reverse;
+  }
+  
+  .text {
+    width: 50%;
+  }
+  
+  .imagePlaceholder {
+    width: 45%;
+    height: 150px;
+    background: gray;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .flowChart {
+    width: 60%;
+    display: block;
+    margin: 20px auto;
+  }
+  

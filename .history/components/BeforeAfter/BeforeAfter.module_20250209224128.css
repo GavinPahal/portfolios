@@ -1,0 +1,55 @@
+.beforeAfterContainer {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  user-select: none;
+}
+
+.beforeImage,
+.afterImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.beforeImage {
+  z-index: 2;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: white;
+  cursor: ew-resize;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%);
+}
+
+.sliderLine {
+  width: 2px;
+  height: 100%;
+  background: black;
+}
+
+.sliderCircle {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

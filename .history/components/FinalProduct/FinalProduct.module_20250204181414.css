@@ -1,0 +1,26 @@
+.finalProduct {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.link {
+  display: block;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #6c1b84;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #4a1061;
+}
+
+.finalProduct img {
+  width: 100%;
+  max-width: 500px;
+}

@@ -1,0 +1,30 @@
+.mockups {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  
+  .imageContainer {
+    flex: 1;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .textContainer {
+    flex: 1;
+    padding-left: 20px;
+  }
+  
+  .textContainer h2 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .textContainer p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,12 @@
+.finalProduct {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.finalProduct img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 500px;
+}

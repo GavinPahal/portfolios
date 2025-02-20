@@ -1,0 +1,18 @@
+.styleGuide {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.styleGuide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 800px;
+}
+    
+    .title {
+    font-family: "philosopher", "bold";
+    font-size: 60px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,50 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh; /* Expands background to take up more space */
+  background-color: rgba(134, 51, 153, 1); /* Keep the original background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Prevents scroll issues */
+  
+}
+
+.heroText h1 {
+  font-family: "philosopher";
+  margin-bottom:400px;
+  margin-right: 600px;
+  color: rgb(255, 255, 255);
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+
+.branchImage {
+  margin-top: 100px;
+  position: absolute;
+  right: -15%;  /* Move it slightly more off-screen to keep balance */
+  top: -40%;    /* Move it higher up */
+  width: auto;
+  height: 180vh; /* Keep it extremely large */
+  max-height: none;
+  animation: branchReveal 2s ease-in-out forwards;
+  transform: rotate(-80deg); /* Increased rotation angle */
+  transform-origin: top right; /* Ensures rotation pivots from the correct point */
+}
+
+
+
+/* Branch Animation */
+@keyframes branchReveal {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

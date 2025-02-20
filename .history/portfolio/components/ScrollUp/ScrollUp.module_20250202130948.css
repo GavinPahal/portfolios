@@ -1,0 +1,18 @@
+.scroll-container {
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .scroll-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .underline {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin: 5px auto 0;
+  }
+  
