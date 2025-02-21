@@ -76,7 +76,7 @@
   .textBlock {
     margin-left: 40px;
     text-wrap: pretty;
-    width: 50%;
+    width:100%;
     font-size: 20px;
     line-height: 1.8;
     text-align: justify;
@@ -85,7 +85,7 @@
   .imageWrapper img {
     margin-right: 40px;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

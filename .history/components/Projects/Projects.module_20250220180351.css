@@ -50,4 +50,16 @@
     opacity: 1;
   }
   
+  @media screen and (max-width: 768px) {
+    .projects {
+      flex-direction: column;
+      align-items: center;
+      overflow-y: auto;
+      height: 100vh;
+      padding: 20px 0;
+    }
   
+    .project {
+      max-width: 90%;
+    }
+  }
