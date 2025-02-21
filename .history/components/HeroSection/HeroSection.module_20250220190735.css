@@ -76,8 +76,8 @@
   }
 
   .heroText h1 {
-    font-size: 2.9rem; /* Make text smaller for mobile */
-    margin-bottom: 330px;
+    font-size: 2.8rem; /* Make text smaller for mobile */
+    margin-bottom: 300px;
     margin-right: 120px; /* Center text */
     text-align: left;
     line-height: 1.1; /* Keep proportions */

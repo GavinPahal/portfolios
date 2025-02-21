@@ -69,33 +69,3 @@
   }
 }
 
-@media screen and (max-width: 768px) {
-  .hero {
-    height: 100vh; /* Keep full height */
-    padding: 0 20px; /* Add padding for proper spacing */
-  }
-
-  .heroText h1 {
-    font-size: 2.9rem; /* Make text smaller for mobile */
-    margin-bottom: 330px;
-    margin-right: 120px; /* Center text */
-    text-align: left;
-    line-height: 1.1; /* Keep proportions */
-    z-index: 1;
-  }
-
-  .branchImage {
-   /* Shift closer to center */
-    top: -15%; /* Adjust to keep it visible */
-    width: 150%; /* Make branches significantly bigger */
-    max-width: none; /* Prevent unwanted scaling limits */
-    transform: rotate(-70deg);
-  }
-
-
-  .apple {
-    top: 70%; /* Keep apple aligned with branch */
-    right: 30%; /* Fine-tune placement */
-    width: 65px; /* Adjust apple size */
-  }
-}

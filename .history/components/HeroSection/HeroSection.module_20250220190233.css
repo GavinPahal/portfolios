@@ -76,12 +76,11 @@
   }
 
   .heroText h1 {
-    font-size: 2.9rem; /* Make text smaller for mobile */
-    margin-bottom: 330px;
-    margin-right: 120px; /* Center text */
+    font-size: 2.8rem; /* Make text smaller for mobile */
+    margin-bottom: 350px;
+    margin-right: 100px; /* Center text */
     text-align: left;
     line-height: 1.1; /* Keep proportions */
-    z-index: 1;
   }
 
   .branchImage {
@@ -94,8 +93,8 @@
 
 
   .apple {
-    top: 70%; /* Keep apple aligned with branch */
-    right: 30%; /* Fine-tune placement */
+    top: 60%; /* Keep apple aligned with branch */
+    right: 35%; /* Fine-tune placement */
     width: 65px; /* Adjust apple size */
   }
 }

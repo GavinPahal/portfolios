@@ -71,31 +71,28 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 100vh; /* Keep full height */
-    padding: 0 20px; /* Add padding for proper spacing */
+    height: 100vh; /* Maintain full-screen height */
+    padding: 0 20px; /* Add padding for spacing */
   }
 
   .heroText h1 {
-    font-size: 2.9rem; /* Make text smaller for mobile */
-    margin-bottom: 330px;
-    margin-right: 120px; /* Center text */
-    text-align: left;
+    font-size: 3rem; /* Reduce text size for better fit */
+    margin-bottom: 120px; /* Adjust spacing */
+    margin-right: 0; /* Center text */
+    text-align: center;
     line-height: 1.1; /* Keep proportions */
-    z-index: 1;
   }
 
   .branchImage {
-   /* Shift closer to center */
-    top: -15%; /* Adjust to keep it visible */
-    width: 150%; /* Make branches significantly bigger */
-    max-width: none; /* Prevent unwanted scaling limits */
-    transform: rotate(-70deg);
+    right: 0; /* Shift to the right edge */
+    top: -10%; /* Move it slightly down */
+    width: 110%; /* Make it larger for emphasis */
+    transform: rotate(-70deg); /* Keep the same tilt */
   }
 
-
   .apple {
-    top: 70%; /* Keep apple aligned with branch */
-    right: 30%; /* Fine-tune placement */
-    width: 65px; /* Adjust apple size */
+    top: 50%; /* Keep apple aligned with the branch */
+    right: 40%; /* Adjust placement */
+    width: 80px; /* Maintain good size balance */
   }
 }
