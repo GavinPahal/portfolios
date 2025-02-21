@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 18px;
+  padding: 12px 20px;
   background: #863399;
 }
 
@@ -13,49 +13,43 @@
 }
 
 .logo {
-  width: 40px; /* Reduced size */
-  margin-right: 6px;
+  width: 50px; /* Adjusted for better fit */
+  margin-right: 8px;
 }
 
 .name {
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .navLinks {
   list-style: none;
   display: flex;
-  gap: 12px;
+  gap: 15px;
 }
 
-/* Adjust link styling */
+/* Adjust link styling for better spacing */
 .navLinks li a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* iPhone-specific styles */
 @media (max-width: 430px) {
   .navbar {
-    padding: 8px 12px;
+    padding: 10px 15px;
   }
 
   .logo {
-    width: 35px;
-    margin-right: 5px;
+    width: 45px; 
+    margin-right: 6px;
   }
 
   .name {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .navLinks {
-    gap: 15px;
-  }
-
-  .navLinks li a {
-    font-size: 12px;
-  }
-}
+    gap: 20px; /* Increase 
