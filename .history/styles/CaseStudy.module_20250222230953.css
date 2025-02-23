@@ -240,7 +240,7 @@
   
     /* Lo-Fi & Hi-Fi Slider Fix */
     .beforeAfterContainer {
-      align-items: center;
+      margin-right: 500px;
       max-width: 100%;
       height: auto;
       aspect-ratio: 16/9;
