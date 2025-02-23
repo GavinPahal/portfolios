@@ -1,0 +1,44 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.imageContainer img {
+  margin-right: 280px;
+  width: 400px;
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right: 250px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher, bold";
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1440px) {
+  .mockups {
+    flex-wrap: wrap; /* Allow wrapping of elements on smaller screens */
+  }
+
+  .imageContainer img {
+    margin-right: 0; /* Remove extra margin */
+    width: 100%; /* Make image responsive */
+  }
+
+  .textContainer {
+    margin-right: 0; /* Remove margin on smaller screens */
+    max-width: 90%; /* Adjust text container width */
+  }
+}

@@ -1,0 +1,50 @@
+.finalProduct {
+  text-align: center;
+  padding: 60px 40px; /* Increased padding for larger screens */
+  max-width: 900px; /* Restricts overly wide content */
+  margin: 0 auto; /* Centers the section */
+}
+
+.title {
+  font-size: 32px; /* Slightly larger for better readability */
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block; /* Prevents excessive line breaks */
+  margin: 15px 0;
+  font-size: 20px;
+  color: #6c1b84;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #4a1061;
+}
+
+.finalProduct img {
+  width: 100%;
+  max-width: 600px; /* Allows a slightly larger image */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 20px auto; /* Centers the image */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .finalProduct {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .finalProduct img {
+    max-width: 500px;
+  }
+}

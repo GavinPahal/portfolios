@@ -1,0 +1,61 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content for better alignment */
+  padding: 50px 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.imageContainer img {
+  margin-right: 280px;
+  width: 400px;
+  max-width: 100%; /* Make sure the image scales */
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right: 329px;
+  max-width: 500px;
+}
+
+/* Typography */
+.textContainer h2 {
+  font-family: "Philosopher, bold";
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* Responsive styles for iPhones */
+@media (max-width: 768px) { /* Covers most iPhones */
+  .mockups {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center text */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .imageContainer img {
+    margin-right: 0;
+    width: 90%; /* Scale image to fit */
+    max-width: 350px; /* Prevent it from being too large */
+  }
+
+  .textContainer {
+    margin: 0 auto; /* Center align */
+    max-width: 90%; /* Adjust width */
+    margin-top: 20px; /* Add spacing between image and text */
+  }
+
+  .textContainer h2 {
+    font-size: 45px; /* Reduce heading size */
+  }
+
+  .textContainer p {
+    font-size: 20px; /* Adjust paragraph size */
+  }
+}

@@ -1,31 +1,63 @@
 .mockups {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    gap: 40px;
-  }
-  
-  .imageContainer img {
-    margin-right: 280px;
-    width: 300px;
-  }
-  
-  .textContainer {
-    margin-bottom: 150px;
-    margin-right:  200px;
-    max-width: 500px;
-  }
-  
-  .textContainer h2 {
-    font-family: "Philosopher, bold";
-    font-size: 70px;
-    margin-bottom: 15px;
-  }
-  
-  .textContainer p {
-    font-family: "Philosopher";
-    font-size: 20px;
-    line-height: 1.6
-  }
-  
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+
+
+.imageContainer img {
+  margin-right: 280px;
+  width:  400px;
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right:  329px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher, bold";
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 25px;
+  line-height: 1.6
+}
+
+
+/* Responsive styles for iPhone 12 Pro (390px x 844px) */
+@media (max-width: 400px) {
+.mockups {
+  flex-direction: column; /* Stack image and text */
+  text-align: center; /* Center the text */
+  padding: 20px; /* Reduce padding for smaller screens */
+}
+
+.imageContainer img {
+  margin-right: 0; /* Remove large margin */
+  width: 100%; /* Make the image fit the screen */
+  max-width: 340px; /* Prevent it from being too large */
+}
+
+.textContainer {
+  margin: 0 auto; /* Center the text box */
+  max-width: 90%; /* Adjust width for smaller screens */
+  margin-top: 20px; /* Add space between image and text */
+}
+
+.textContainer h2 {
+  font-size: 38px; /* Reduce title size for better fit */
+}
+
+.textContainer p {
+  font-size: 18px; /* Adjust paragraph size */
+  text-align: justify; /* Improve readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+  padding: 0 10px; /* Add slight padding for breathing room */
+}
+}

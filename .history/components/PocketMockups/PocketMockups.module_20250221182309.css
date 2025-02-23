@@ -1,0 +1,58 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content */
+  padding: 50px;
+  gap: 40px; /* Adjust spacing dynamically */
+}
+
+.imageContainer img {
+  width: 400px;
+  max-width: 100%;
+  margin: 0; /* Remove excessive right margin */
+  border: 3px solid #6c1b84; /* Adds a square border */
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.imageContainer img:hover {
+  background-color: #6c1b84;
+}
+
+.textContainer {
+  max-width: 450px; /* Adjust width for balance */
+  margin: 0; /* Remove excessive margins */
+}
+
+.textContainer h2 {
+  font-family: "Philosopher", bold;
+  font-size: 50px; /* Slightly smaller for better readability */
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 18px; /* Adjusted for clarity */
+  line-height: 1.6;
+}
+
+/* Ensure responsiveness for MacBook screens */
+@media (max-width: 1440px) {
+  .mockups {
+    flex-direction: column; /* Stack elements for smaller screens */
+    text-align: center;
+  }
+
+  .imageContainer img {
+    width: 350px;
+  }
+
+  .textContainer h2 {
+    font-size: 40px;
+  }
+
+  .textContainer p {
+    font-size: 16px;
+  }
+}

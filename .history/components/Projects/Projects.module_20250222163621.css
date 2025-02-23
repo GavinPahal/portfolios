@@ -1,0 +1,81 @@
+.projects {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 450px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover .image {
+    transform: scale(1.05);
+  }
+  
+  .title {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+  
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+    width: 200px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 390px) {
+    .projects {
+      flex-direction: column; /* Stack projects vertically */
+      align-items: center;
+      padding: 20px; /* Add padding for spacing */
+    }
+  
+    .project {
+      max-width: 100%; /* Ensure it scales well */
+      margin-bottom: 20px; /* Space between stacked projects */
+    }
+  
+    .image {
+      width: 100%; /* Ensure images fit container */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .title {
+      font-size: 1.2rem; /* Slightly smaller for better fit */
+      bottom: 40px; /* Adjust for spacing */
+    }
+  
+    .overlay {
+      width: 90%; /* Make it more responsive */
+      font-size: 0.8rem; /* Smaller text for smaller screens */
+      bottom: 80px; /* Adjust for better placement */
+    }
+  }
+  

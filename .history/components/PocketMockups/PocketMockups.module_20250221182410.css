@@ -1,0 +1,56 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content */
+  padding: 50px;
+  gap: 60px; /* Adjusted spacing for balance */
+}
+
+.imageContainer img {
+  width: 400px;
+  max-width: 100%;
+  margin: 0; /* Remove excessive right margin */
+  border: 3px solid #6c1b84; /* Adds a square border */
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.textContainer {
+  max-width: 480px; /* Slightly wider for better balance */
+  margin: 0; /* Remove excessive margins */
+}
+
+.textContainer h2 {
+  font-family: "Philosopher", bold;
+  font-size: 50px; /* Adjusted for readability */
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 18px; /* Adjusted for clarity */
+  line-height: 1.6;
+}
+
+/* Ensure proper layout for MacBook screens */
+@media (max-width: 1440px) {
+  .mockups {
+    gap: 40px; /* Adjust spacing */
+  }
+
+  .imageContainer img {
+    width: 380px; /* Slightly smaller */
+  }
+
+  .textContainer {
+    max-width: 450px;
+  }
+
+  .textContainer h2 {
+    font-size: 45px;
+  }
+
+  .textContainer p {
+    font-size: 17px;
+  }
+}

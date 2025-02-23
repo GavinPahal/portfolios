@@ -1,0 +1,80 @@
+.magazine {
+  padding: 80px 5%;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #4a2c6d;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.magazineContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coverImage {
+  
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.textContainer {
+  max-width: 600px;
+}
+
+/* Typography */
+.subheading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+}
+
+/* Responsive styles for iPhone 12 Pro (390px x 844px) */
+@media (max-width: 400px) {
+  .magazineContainer {
+    flex-direction: column; /* Stack image and text */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .coverImage {
+    margin-right: 0; /* Remove large margin */
+    width: 100%; /* Make the image fit the screen */
+    max-width: 340px; /* Prevent it from being too large */
+  }
+
+  .textContainer {
+    margin: 0 auto; /* Center the text box */
+    max-width: 90%; /* Adjust width for smaller screens */
+    margin-top: 20px; /* Add space between image and text */
+  }
+
+  .subheading {
+    font-size: 38px; /* Reduce title size for better fit */
+  }
+
+  .description {
+    font-size: 18px; /* Adjust paragraph size */
+    text-align: justify; /* Improve readability */
+    line-height: 1.8; /* Increase line height for better spacing */
+    padding: 0 10px; /* Add slight padding for breathing room */
+  }
+}

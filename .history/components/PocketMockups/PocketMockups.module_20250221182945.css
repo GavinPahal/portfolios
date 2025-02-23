@@ -1,0 +1,57 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+  justify-content: space-between; /* Adjust space between the image and text */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.imageContainer img {
+  margin-right: 280px;
+  width: 400px;
+  max-width: 100%; /* Make sure image is responsive */
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right: 250px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher", sans-serif; /* Fix font-family syntax */
+  font-weight: bold;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1440px) {
+  .mockups {
+    flex-direction: column; /* Stack image and text vertically for smaller screens */
+    align-items: center; /* Center-align elements */
+  }
+
+  .imageContainer {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add some space between image and text */
+  }
+
+  .textContainer {
+    margin-right: 0;
+    max-width: 90%; /* Allow text to use more space */
+  }
+
+  .textContainer h2 {
+    font-size: 60px; /* Adjust the font size for smaller screens */
+  }
+
+  .textContainer p {
+    font-size: 18px; /* Reduce font size for readability */
+  }
+}
