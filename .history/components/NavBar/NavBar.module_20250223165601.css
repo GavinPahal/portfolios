@@ -20,7 +20,7 @@
 
 .name {
   color: white;
-  font-size: 22px; /* Increased for readability */
+  font-size: 20px; /* Increased for readability */
   font-weight: bold;
 }
 
@@ -33,7 +33,7 @@
 .navLinks li a {
   color: white;
   text-decoration: none;
-  font-size: 30px; /* Slightly larger for visibility */
+  font-size: 25px; /* Slightly larger for visibility */
 }
 
 /* Responsive for smaller screens */
