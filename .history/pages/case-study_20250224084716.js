@@ -77,24 +77,23 @@ const CaseStudy = () => {
             delivers a seamless and reliable experience for travelers.
           </p>
         </div>
-        <h2 className={styles.headings}>User Research</h2>
+           {/* User Persona Carousel */}
+           <h2 className={styles.heading}>User Persona</h2>
+        <PersonaCarousel />
+        <h2 className={styles.heading}>User Research</h2>
         <p className={styles.textBlock}>
           Research was crucial to understanding user needs and preferences. We conducted surveys, interviews,
           and usability tests to gather insights on user behavior and expectations. This data informed our design
           decisions, ensuring GoldiBite met user needs and provided a valuable solution.
         </p>
         <UserResearch />
-           {/* User Persona Carousel */}
-           <h2 className={styles.headings}>User Persona</h2>
-        <PersonaCarousel />
-      
 
         
         {/* Logo Section */}
         <div className={styles.center}>
-          <h2 className={styles.headings}>Logo</h2>
+          <h2 className={styles.heading}>Logo</h2>
           <p className={styles.textBlock}>
-          The GoldiBite logo is a sleek, modern wordmark that puts readability and professionalism first.
+            The GoldiBite logo is a sleek, modern wordmark that puts readability and professionalism first.
             Its minimalistic design reinforces brand recognition and allows it to be versatile enough for
             different uses. The monochromatic palette adds timelessness and adaptability.
           </p>
@@ -126,7 +125,7 @@ const CaseStudy = () => {
 
         <BeforeAfter before="/images/high.png" after="/images/hi.png" />
 
-
+       <BrochuresCarousel />
 
         <h2 className={styles.heading}>Promotion Video</h2>
         <p className={styles.textBlock}>

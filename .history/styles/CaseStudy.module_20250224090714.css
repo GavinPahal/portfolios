@@ -17,16 +17,10 @@
     font-family:  "Philosopher";
     font-size: 45px;
     font-weight: bold;
-    margin-top: 10px;
-    text-align: center;
-  }
-  .headings {
-    font-family:  "Philosopher";
-    font-size: 45px;
-    font-weight: bold;
     margin-top: 100px;
     text-align: center;
   }
+  
   .subheading {
     font-family:  "Philosopher";
     font-size: 35px;
@@ -146,12 +140,14 @@
   }
   
   .beforeAfterContainer {
-    width: 100%; /* Adjusted for responsiveness */
+    position: relative;
+    width: 90%; /* Adjusted for responsiveness */
+    max-width: 700px;
+    height: auto;
     overflow: hidden;
     border-radius: 10px;
     margin: 30px auto; /* Centers the container */
     display: flex;
-    margin-right: 100px;
 
   }
   .slider {
@@ -166,6 +162,7 @@
     justify-content: center;
     align-items: center;
     transform: translateX(-50%);
+    
   }
   
   .sliderCircle {
@@ -177,6 +174,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    
   }
   
   @media screen and (max-width: 430px) {
