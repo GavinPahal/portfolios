@@ -232,7 +232,7 @@
   
     .imgs,
     .img {
-      max-width: 60%;
+      max-width: 100%;
       height: auto;
     }
   
@@ -242,23 +242,59 @@
     }
   
     /* Before-After Slider Fix */
-
- @media screen and (max-width: 390px) {
-          .beforeAfterContainer {
-            width: 90%;
-            max-width: 350px; /* Fits the screen */
-          }
-        
-          .slider {
-            left: 50%;
-            width: 3px;
-          }
-        
-          .sliderCircle {
-            width: 18px;
-            height: 18px;
-          }
-        }
+    .beforeAfterContainer {
+      width: 100%;
+      max-width: 350px; /* Ensuring it fits the screen */
+      height: auto;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 30px auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
-  
-   
+    
+    .slider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 3px;
+      background: white;
+      cursor: ew-resize;
+      z-index: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .sliderCircle {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 2px solid black;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+      .beforeAfterContainer {
+        width: 90%;
+        max-width: 350px; /* Fits the screen */
+      }
+    
+      .slider {
+        left: 50%;
+        width: 3px;
+      }
+    
+      .sliderCircle {
+        width: 18px;
+        height: 18px;
+      }
+    
+  }

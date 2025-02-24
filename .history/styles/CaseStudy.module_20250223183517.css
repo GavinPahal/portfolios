@@ -232,7 +232,7 @@
   
     .imgs,
     .img {
-      max-width: 60%;
+      max-width: 100%;
       height: auto;
     }
   
@@ -242,7 +242,6 @@
     }
   
     /* Before-After Slider Fix */
-
  @media screen and (max-width: 390px) {
           .beforeAfterContainer {
             width: 90%;
