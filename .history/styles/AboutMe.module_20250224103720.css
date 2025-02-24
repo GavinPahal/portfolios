@@ -85,12 +85,13 @@
 .imageWrapper {
   display: flex;
   justify-content: center;
-  width: 50%;
+  width: 100%;
 }
 
 .imageWrapper img {
-  margin-right: 10px;
-  width: 90%;
+  margin-right: 40px;
+  width: 100%;
+  max-width: 500px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
