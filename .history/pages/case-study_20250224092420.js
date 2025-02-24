@@ -128,8 +128,7 @@ const CaseStudy = () => {
         <BeforeAfter before="/images/high.png" after="/images/hi.png" />
 
 
-        <h2 className={styles.headings}>Brochures</h2>
-        <BrochuresCarousel/>
+
         <h2 className={styles.heading}>Promotion Video</h2>
         <p className={styles.textBlock}>
           Capturing the essence of GoldiBite in a short video was crucial for promoting the app.

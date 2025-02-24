@@ -6,7 +6,7 @@ import PersonaCarousel from "../components/PersonaCarousel/PersonaCarousel";
 import styles from "../styles/CaseStudy.module.css";
 import BackToTop from "../components/BackToTop/BackToTop";
 import UserResearch from "../components/UserResearch/UserResearch";
-import BrochuresCarousel from "../components/BrochuresCarousel/BrochuresCarousel";
+import BrochuresCarousel from "@/components/BrochuresCarousel/brochuresCarousel";
 
 
 const CaseStudy = () => {
@@ -128,8 +128,7 @@ const CaseStudy = () => {
         <BeforeAfter before="/images/high.png" after="/images/hi.png" />
 
 
-        <h2 className={styles.headings}>Brochures</h2>
-        <BrochuresCarousel/>
+
         <h2 className={styles.heading}>Promotion Video</h2>
         <p className={styles.textBlock}>
           Capturing the essence of GoldiBite in a short video was crucial for promoting the app.
