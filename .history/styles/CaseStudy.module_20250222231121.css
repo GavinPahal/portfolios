@@ -174,7 +174,7 @@
     transform: translateY(-50%);
   }
   
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 390px) {
     .container {
       width: 95%;
       padding: 15px 0;
@@ -238,16 +238,12 @@
       height: auto;
     }
   
-    /* Before-After Slider Fix */
+    /* Lo-Fi & Hi-Fi Slider Fix */
     .beforeAfterContainer {
-      width: 100%;
-      max-width: 700px;
-      height: auto;
-      border-radius: 10px;
-      margin: 30px auto;
-      display: flex;
-      justify-content: center;
       align-items: center;
+      max-width: 100%;
+      height: auto;
+  
     }
   
     .slider {

@@ -47,9 +47,9 @@
 /* Apple Vector Styling */
 .apple {
   position: absolute;
-  top: 45%; /* Adjust to align with branch near "Pahal" */
-  right: 52%; /* Fine-tune position for accurate placement */
-  width: 100px; /* Adjust size */
+  top: 42%; /* Adjust to align with branch near "Pahal" */
+  right: 50%; /* Fine-tune position for accurate placement */
+  width: 80px; /* Adjust size */
   height: auto;
   opacity: 0;
   transform: scale(0);
