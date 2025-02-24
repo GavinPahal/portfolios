@@ -1,16 +1,13 @@
 .carousel {
     position: relative;
     width: 100%;
-    max-width: 800px;
     margin: auto;
     overflow: hidden;
     text-align: center;
-    margin-bottom: 50px;
   }
   
   .image {
     width: 100%;
-    max-width: 500px;
     display: block;
     margin: auto;
   }
