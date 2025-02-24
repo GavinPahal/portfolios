@@ -143,11 +143,11 @@
   }
   
   .imgss{
-    width: 60%;
+    display: block;
     margin: 10px auto;
+    max-width: 500px;
     height: auto;
   }
-
   .flowChart {
     margin-bottom: 5rem;
     width: 80%;

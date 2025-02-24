@@ -28,7 +28,7 @@
     margin-top: 150px;
     text-align: center;
   }
-
+  
   .subheading {
     font-family:  "Philosopher";
     font-size: 35px;
@@ -36,13 +36,11 @@
     margin-bottom: 10px;
     text-align: center;
   }
-
   .video{
     border-radius: 5px;
     margin-left: 10rem;
     margin-bottom: 4rem;
   }
-  
   .textBlock {
     font-family: "Philosopher";
     font-size: 18px;
@@ -142,12 +140,6 @@
     height: auto;
   }
   
-  .imgss{
-    width: 60%;
-    margin: 10px auto;
-    height: auto;
-  }
-
   .flowChart {
     margin-bottom: 5rem;
     width: 80%;
