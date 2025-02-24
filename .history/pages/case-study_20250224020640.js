@@ -126,9 +126,16 @@ const CaseStudy = () => {
         <BeforeAfter before="/images/high.png" after="/images/hi.png" />
 
 
-    
+        {/* External Testing */}
+        <h2 className={styles.heading}>External Testing</h2>
+        <p className={styles.textBlock}>
+          Reading food labels is time consuming and error prone. We assigned tasks strategically:
+          developers built AI for fast analysis, designers ensured a simple interface, and researchers
+          refined allergen data. This focus made GoldiBite accurate, efficient, and user-friendly,
+          empowering users to make safe food choices instantly.
+        </p>
 
-       <brochuresCarousel />
+<brochuresCarousel />
         <h2 className={styles.heading}>Promotion Video</h2>
         <p className={styles.textBlock}>
           Capturing the essence of GoldiBite in a short video was crucial for promoting the app.

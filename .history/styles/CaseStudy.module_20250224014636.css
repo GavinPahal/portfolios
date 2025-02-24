@@ -236,9 +236,9 @@
       height: auto;
     }
     .imgss {
-      margin-left: 40px;
-      max-width: 80%;  /* Adjust the percentage to make it smaller */
-      height: auto;
+      width: 10%; /* Reduce to 10% of the container's width */
+      max-width: 100px; /* Set a very small max-width */
+      height: auto; /* Maintain aspect ratio */
     }
     
     

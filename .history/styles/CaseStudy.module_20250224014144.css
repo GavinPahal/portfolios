@@ -235,13 +235,9 @@
       max-width: 60%;
       height: auto;
     }
-    .imgss {
-      margin-left: 40px;
-      max-width: 80%;  /* Adjust the percentage to make it smaller */
-      height: auto;
-    }
-    
-    
+  .imgss{
+    width: 20%;
+  }
     .flowChart {
       width: 100%;
       height: auto;

@@ -6,7 +6,6 @@ import PersonaCarousel from "../components/PersonaCarousel/PersonaCarousel";
 import styles from "../styles/CaseStudy.module.css";
 import BackToTop from "../components/BackToTop/BackToTop";
 import UserResearch from "../components/UserResearch/UserResearch";
-import brochuresCarousel from "../components/brochuresCarousel/brochuresCarousel";
 
 const CaseStudy = () => {
   return (
@@ -77,9 +76,7 @@ const CaseStudy = () => {
             delivers a seamless and reliable experience for travelers.
           </p>
         </div>
-           {/* User Persona Carousel */}
-           <h2 className={styles.heading}>User Persona</h2>
-        <PersonaCarousel />
+   
         <h2 className={styles.heading}>User Research</h2>
         <p className={styles.textBlock}>
           Research was crucial to understanding user needs and preferences. We conducted surveys, interviews,
@@ -97,22 +94,24 @@ const CaseStudy = () => {
             Its minimalistic design reinforces brand recognition and allows it to be versatile enough for
             different uses. The monochromatic palette adds timelessness and adaptability.
           </p>
-          <img src="/images/wordmark2 1.png" alt="GoldiBite Logo Variation" className={styles.img}
-           />
+          <img
+            src="/images/wordmark2 1.png"
+            alt="GoldiBite Logo Variation"
+            className={styles.img}
+          />
           <img
             src="/images/webHorizontal 1.png"
             alt="GoldiBite Logo"
             className={styles.imgs}
           />
-             <img
-            src="/images/Style Guide.svg"
-            alt="GoldiBite Logo Variation"
-            className={styles.imgss}
-          />
         </div>
 
-   {/* Flow State */}
-   <h2 className={styles.heading}>Flow State</h2>
+        {/* Low-Fi vs Hi-Fi Before/After */}
+        <h2 className={styles.heading}> Low-Fi vs Hi-Fi </h2>
+        <BeforeAfter before="/images/high.png" after="/images/hi.png" />
+
+        {/* Flow State */}
+        <h2 className={styles.heading}>Flow State</h2>
         <p className={styles.textBlock}>
           Users set preferences, scan food, and receive real-time alerts. AI analyzes ingredients,
           detects allergens, tracks nutrition, and estimates portions. If a restricted item is found,
@@ -120,15 +119,16 @@ const CaseStudy = () => {
           choices simple and stress-free.
         </p>
         <img src="/images/Group 1 1.png" className={styles.flowChart} />
-        {/* Low-Fi vs Hi-Fi Before/After */}
-        <h2 className={styles.heading}> Low-Fi vs Hi-Fi </h2>
 
-        <BeforeAfter before="/images/high.png" after="/images/hi.png" />
+        {/* External Testing */}
+        <h2 className={styles.heading}>External Testing</h2>
+        <p className={styles.textBlock}>
+          Reading food labels is time consuming and error prone. We assigned tasks strategically:
+          developers built AI for fast analysis, designers ensured a simple interface, and researchers
+          refined allergen data. This focus made GoldiBite accurate, efficient, and user-friendly,
+          empowering users to make safe food choices instantly.
+        </p>
 
-
-    
-
-       <brochuresCarousel />
         <h2 className={styles.heading}>Promotion Video</h2>
         <p className={styles.textBlock}>
           Capturing the essence of GoldiBite in a short video was crucial for promoting the app.

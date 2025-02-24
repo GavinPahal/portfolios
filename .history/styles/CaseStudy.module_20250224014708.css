@@ -236,8 +236,7 @@
       height: auto;
     }
     .imgss {
-      margin-left: 40px;
-      max-width: 80%;  /* Adjust the percentage to make it smaller */
+      max-width: 30%;  /* Adjust the percentage to make it smaller */
       height: auto;
     }
     

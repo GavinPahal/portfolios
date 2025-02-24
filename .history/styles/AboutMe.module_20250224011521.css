@@ -82,12 +82,6 @@
   text-align: justify;
 }
 
-.imageWrapper {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
 .imageWrapper img {
   margin-right: 40px;
   width: 100%;
@@ -138,50 +132,4 @@
 .skillsList li:hover {
   background: rgba(134, 51, 153, 0.2);
   transform: translateY(-5px);
-}
-
-/* Media Queries for iPhone 12 (390x844) */
-@media (max-width: 390px) {
-  .hero {
-    padding: 60px 0;
-  }
-
-  .title {
-    font-size: 48px;
-  }
-
-  .content {
-    flex-direction: column;
-    gap: 30px;
-    margin: 40px 0;
-  }
-
-  .textBlock {
-    width: 100%;
-    margin-left: 0;
-    font-size: 18px;
-  }
-
-  .imageWrapper {
-    order: -1; /* This moves the image to the top */
-    width: 100%;
-  }
-
-  .imageWrapper img {
-    max-width: 100%;
-    margin-right: 0;
-  }
-
-  .subheading {
-    font-size: 36px;
-  }
-
-  .skillsList {
-    font-size: 18px;
-  }
-
-  .skillsList li {
-    padding: 12px 20px;
-    font-size: 18px;
-  }
 }

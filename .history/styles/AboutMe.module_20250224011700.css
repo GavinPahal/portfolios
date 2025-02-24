@@ -82,12 +82,6 @@
   text-align: justify;
 }
 
-.imageWrapper {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
 .imageWrapper img {
   margin-right: 40px;
   width: 100%;
@@ -160,11 +154,6 @@
     width: 100%;
     margin-left: 0;
     font-size: 18px;
-  }
-
-  .imageWrapper {
-    order: -1; /* This moves the image to the top */
-    width: 100%;
   }
 
   .imageWrapper img {

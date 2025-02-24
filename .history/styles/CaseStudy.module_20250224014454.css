@@ -232,16 +232,10 @@
   
     .imgs,
     .img {
-      max-width: 60%;
+      max-width: 0%;
       height: auto;
     }
-    .imgss {
-      margin-left: 40px;
-      max-width: 80%;  /* Adjust the percentage to make it smaller */
-      height: auto;
-    }
-    
-    
+  
     .flowChart {
       width: 100%;
       height: auto;
