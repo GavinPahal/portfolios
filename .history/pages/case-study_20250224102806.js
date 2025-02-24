@@ -113,7 +113,7 @@ const CaseStudy = () => {
         </div>
 
    {/* Flow State */}
-   <h2 className={styles.heading}>Flow State</h2>
+   <h2 className={styles.headings}>Flow State</h2>
         <p className={styles.textBlock}>
           Users set preferences, scan food, and receive real-time alerts. AI analyzes ingredients,
           detects allergens, tracks nutrition, and estimates portions. If a restricted item is found,
@@ -123,11 +123,11 @@ const CaseStudy = () => {
         <img src="/images/Group 1 1.png" className={styles.flowChart} />
 
         {/* Low-Fi vs Hi-Fi Before/After */}
-        <h2 className={styles.heading}> Low-Fi vs Hi-Fi </h2>
+        <h2 className={styles.headings}> Low-Fi vs Hi-Fi </h2>
         <BeforeAfter before="/images/high.png" after="/images/hi.png" />
 
 
-        <h2 className={styles.heading}>Brochures</h2>
+        <h2 className={styles.headings}>Brochures</h2>
         <BrochuresCarousel/>
         <h2 className={styles.heading}>Promotion Video</h2>
         <p className={styles.textBlock}>
