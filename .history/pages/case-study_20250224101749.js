@@ -96,7 +96,7 @@ const CaseStudy = () => {
           <h2 className={styles.headings}>Logo</h2>
           <p className={styles.textBlock}>
           The GoldiBite logo is a sleek, modern wordmark that keeps things simple while staying professional and easy to read.
-           Its minimal design makes it super versatile, and the monochromatic palette gives it a classic, and nostalgic feel.
+           Its minimal design makes it super versatile, and the monochromatic palette gives it a classic, and nostalgic look.
           </p>
           <img src="/images/wordmark2 1.png" alt="GoldiBite Logo Variation" className={styles.img}
            />
