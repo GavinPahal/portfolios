@@ -141,16 +141,14 @@
   
   .beforeAfterContainer {
     position: relative;
-    width: 90%; /* Adjusted for responsiveness */
+    width: 100%;
     max-width: 700px;
-    height: auto;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    margin: 30px auto; /* Centers the container */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 30px auto;
   }
+  
   .slider {
     position: absolute;
     top: 0;
@@ -183,17 +181,17 @@
     }
   
     .title {
-      font-size: 35px;
+      font-size: 32px;
       margin: 15px 0 30px;
     }
   
     .heading {
-      font-size: 29px;
+      font-size: 25px;
       margin: 10px 0;
     }
   
     .subheading {
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: 8px;
     }
   
@@ -241,12 +239,14 @@
     }
   
     /* Before-After Slider Fix */
-    @media screen and (max-width: 390px) {
-      .beforeAfterContainer {
-        width: 100%; /* Make full width */
-        max-width: 350px; /* Ensures it fits within the screen */
-        margin: 20px auto; /* Keeps it centered */
-      }
+    .beforeAfterContainer {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 10px;
+      margin: 30px auto;
+      display: flex;
+
     }
   
     .slider {

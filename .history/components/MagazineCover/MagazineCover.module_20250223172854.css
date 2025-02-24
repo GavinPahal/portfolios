@@ -8,7 +8,7 @@
     
     text-align: center;
     padding-top: 50px;
-    margin-right: 110px;
+    margin-right: 200px;
     font-family: "philosopher", "bold";
     color: white;
     font-size: 100px;
@@ -17,7 +17,7 @@
   .img {
     max-width: 400px;
     width: 100%;
-    margin-left: 600px;
+    margin-right: 10px;
     margin-top: 20px;
   }
   @media screen and (max-width: 390px) {

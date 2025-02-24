@@ -33,7 +33,7 @@
 .navLinks li a {
   color: white;
   text-decoration: none;
-  font-size: 28px; /* Slightly larger for visibility */
+  font-size: 30px; /* Slightly larger for visibility */
 }
 
 /* Responsive for smaller screens */
