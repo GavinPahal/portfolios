@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "./HeroSection.module.css";
-import Link from "next/link";
 
 const HeroSection = () => {
   const words = ["Hi, I'm", "Gavin Pahal"];
@@ -46,14 +45,13 @@ const HeroSection = () => {
         className={styles.branchImage}
       />
       {showApple && (
-      <Link href="/resume">
-      <img src="/images/apple.svg" alt="Read Resume" className={styles.apple} />
+        <a href="/resume" target="_blank" rel="noopener noreferrer">
           <img
             src="/images/apple.svg" // Replace with correct apple path
             alt="Read Resume"
             className={styles.apple}
           />
-   </Link>
+        </a>
       )}
     </header>
   );

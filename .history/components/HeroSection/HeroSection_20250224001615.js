@@ -46,14 +46,13 @@ const HeroSection = () => {
         className={styles.branchImage}
       />
       {showApple && (
-      <Link href="/resume">
-      <img src="/images/apple.svg" alt="Read Resume" className={styles.apple} />
+ <li><Link href="/Resumes">About</Link>
           <img
             src="/images/apple.svg" // Replace with correct apple path
             alt="Read Resume"
             className={styles.apple}
           />
-   </Link>
+   </li>
       )}
     </header>
   );

@@ -55,21 +55,21 @@
   }
 
   .name {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 5px;
   }
 
   .contact {
-    font-size: 12px;
-    padding-right: 2px;
+    font-size: 14px;
+    padding-right: 30px;
   }
 
   .icons {
     gap: 8px;
-    margin-left: 5px;
+    margin-left: 30px;
   }
 
   .icons img {
-    width: 23px; /* Slightly smaller for mobile */
+    width: 28px; /* Slightly smaller for mobile */
   }
 }

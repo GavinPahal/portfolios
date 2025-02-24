@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import styles from "./HeroSection.module.css";
-import Link from "next/link";
 
 const HeroSection = () => {
   const words = ["Hi, I'm", "Gavin Pahal"];

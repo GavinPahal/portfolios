@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
 }
 
 .container {
@@ -13,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap; /* Enables stacking on smaller screens */
 }
 
 .name {
@@ -42,34 +44,39 @@
   width: 30px;
 }
 
-/* Responsive Design for iPhone 390x844 */
+/* Responsive Design for iPhone 12 Pro (390x844) */
 @media screen and (max-width: 430px) {
   .footer {
-    padding: 20px;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px; /* Reduce padding */
   }
 
   .container {
-    flex-direction: row; /* Keep items in a row */
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 10px; /* Add spacing between stacked items */
+    text-align: center;
   }
 
   .name {
-    font-size: 14px;
-    padding-left: 5px;
+    font-size: 16px; /* Reduce font size */
+    padding-left: 0; /* Remove unnecessary padding */
   }
 
   .contact {
-    font-size: 12px;
-    padding-right: 2px;
+    font-size: 14px; /* Adjust font size */
+    flex-direction: column; /* Stack text and icons */
+    align-items: center;
+    padding-right: 0;
   }
 
   .icons {
-    gap: 8px;
-    margin-left: 5px;
+    margin-left: 0; /* Center icons */
+    gap: 8px; /* Reduce spacing */
   }
 
   .icons img {
-    width: 23px; /* Slightly smaller for mobile */
+    width: 25px; /* Scale down icons slightly */
   }
 }

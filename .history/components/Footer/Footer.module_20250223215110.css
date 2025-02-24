@@ -65,11 +65,12 @@
   }
 
   .icons {
+    width: 80%
     gap: 8px;
     margin-left: 5px;
   }
 
   .icons img {
-    width: 23px; /* Slightly smaller for mobile */
+    width: 28px; /* Slightly smaller for mobile */
   }
 }

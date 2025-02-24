@@ -5,7 +5,7 @@ const MagazineSpreads = () => {
     <section className={styles.dielines}>
       <h2 className={styles.title}>Spreads</h2>
       <div className={styles.images}>
-        <img src="/images/Screenshot 2025-02-03 042737 (1).png" alt="Tiger Claw Dieline 1" />
+        <img src="/images/Screenshot 2025-02-03 042514 (3).png" alt="Tiger Claw Dieline 1" />
         <img src="/images/Screenshot 2025-02-03 042514 (3).png" alt="Tiger Claw Dieline 2" />
         <img src="/images/Screenshot 2025-02-03 042554 (1).png" alt="Tiger Claw Dieline 3" />
       </div>
