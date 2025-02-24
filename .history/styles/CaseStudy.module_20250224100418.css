@@ -143,12 +143,12 @@
   }
   
   .imgss{
-    width: 50%;
-    margin: 10px auto;
+    width: 60%;
     height: auto;
   }
+
   .flowChart {
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
     width: 80%;
     display: block;
     margin: 20px auto;
