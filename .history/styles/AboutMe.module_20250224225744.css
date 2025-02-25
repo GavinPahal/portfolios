@@ -2,7 +2,7 @@
   text-wrap: pretty;
   width: 100%;
   margin: auto;
-  font-family: "Philosopher", bold;
+  font-family: "Philosopher", sans-serif;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -19,10 +19,8 @@
   text-align: center;
   background: linear-gradient(135deg, rgba(134, 51, 153, 1), rgba(74, 20, 140, 1));
   color: white;
-  padding: 100px 0;
+  padding: 100px 100px;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  padding: 90px 0;
-  margin-top: -5px;
   animation: slideIn 1s ease-in-out;
 }
 

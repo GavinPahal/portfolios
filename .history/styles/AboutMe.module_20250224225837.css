@@ -1,8 +1,8 @@
 .container {
   text-wrap: pretty;
   width: 100%;
-  margin: auto;
-  font-family: "Philosopher", bold;
+  margin-top: 100px;
+  font-family: "Philosopher", sans-serif;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -21,8 +21,6 @@
   color: white;
   padding: 100px 0;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  padding: 90px 0;
-  margin-top: -5px;
   animation: slideIn 1s ease-in-out;
 }
 
