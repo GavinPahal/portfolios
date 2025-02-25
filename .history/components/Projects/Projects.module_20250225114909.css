@@ -55,7 +55,7 @@
     .projects {
       gap: 10px;
       padding: 5px;
-      overflow-y: scroll;
+      overflow-y: scroll
     }
   
     .project {
