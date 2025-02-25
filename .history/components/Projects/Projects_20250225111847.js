@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "GoldiBite",
-    image: "/images/Rectangle 65 (1).png", // Update with actual image path
+    image: "/images/mock.png", // Update with actual image path
     link: "/case-study",
     description: "Helping travelers with food allergies find safe meals.",
   },

@@ -23,7 +23,7 @@ const projects = [
     description: "Helping travelers with food allergies find safe meals.",
   },
   {
-    title: "GoldiBite",
+    title: "Magazine",
     image: "/images/Rectangle 65 (1).png", // Update with actual image path
     link: "/case-study",
     description: "Helping travelers with food allergies find safe meals.",
