@@ -6,7 +6,7 @@ import PersonaCarousel from "../components/PersonaCarousel/PersonaCarousel";
 import styles from "../styles/CaseStudy.module.css";
 import BackToTop from "../components/BackToTop/BackToTop";
 import UserResearch from "../components/UserResearch/UserResearch";
-import Brochures from "../components/Brochures/Brochures";
+import Brochures from "@/components/Brochures/Brochures";
 
 
 
