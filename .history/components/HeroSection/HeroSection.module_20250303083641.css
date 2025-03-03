@@ -1,4 +1,4 @@
-hero {
+.hero {
   position: relative;
   width: 100%;
   height: 120vh;
@@ -8,6 +8,12 @@ hero {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  perspective: 1000px;
+}
+
+.heroText {
+  z-index: 1;
+  transition: transform 0.3s ease-out;
 }
 
 .heroText h1 {
@@ -18,6 +24,16 @@ hero {
   font-size: 5.5rem;
   font-weight: bold;
   line-height: 1.2;
+  animation: floatText 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatText {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
 }
 
 .branchImage {
@@ -29,8 +45,8 @@ hero {
   transform: rotate(-70deg);
   transform-origin: top right; 
   animation: branchReveal 2s ease-in-out forwards;
+  transition: transform 0.3s ease-out;
 }
-
 
 @keyframes branchReveal {
   from {
@@ -43,19 +59,19 @@ hero {
   }
 }
 
-.apple {
+.appleContainer {
   position: absolute;
   top: 45%; 
   right: 52%; 
-  width: 100px;
-  height: auto;
+  width: 150px; 
+  height: 150px;
   opacity: 0;
   transform: scale(0);
   animation: growApple 1.5s ease-in-out 2s forwards;
   cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Apple Growing Animation */
 @keyframes growApple {
   from {
     opacity: 0;
@@ -67,10 +83,40 @@ hero {
   }
 }
 
+.appleContainer:hover {
+  transform: scale(1.1) rotate(10deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+/* Falling Leaves */
+.leaf {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url("/images/leaf.svg") no-repeat center/contain;
+  opacity: 0;
+  animation: fallLeaves 5s linear infinite;
+}
+
+@keyframes fallLeaves {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px) rotate(0deg);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .hero {
     height: 70vh;
-    padding: 0 110px;;
+    padding: 0 110px;
   }
 
   .heroText h1 {
@@ -89,10 +135,10 @@ hero {
     transform: rotate(-70deg);
   }
 
-
-  .apple {
+  .appleContainer {
     top: 45%; 
     right: 60%; 
-    width: 70px; 
+    width: 100px; 
+    height: 100px;
   }
 }
