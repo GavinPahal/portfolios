@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "@react-spring/core": "^9.7.5",
     "@react-spring/three": "^9.7.5",
     "@react-three/drei": "^10.0.3",
     "@react-three/fiber": "^9.0.4",
