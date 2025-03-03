@@ -1,0 +1,38 @@
+.hero {
+    background: #863399;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .title {
+    
+    text-align: center;
+    padding-top: 50px;
+    margin-right: 150px;
+    font-family: "philosopher", "bold";
+    color: white;
+    font-size: 100px;
+  }
+  
+  .img {
+    max-width: 400px;
+    width: 100%;
+    margin-left: 600px;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 390px) {
+    .title {
+      font-size:40px; /* Reduce font size for better fit */
+      padding-top: 40px;
+      margin-left: 50px;
+    }
+  
+    .img {
+      max-width: 300px; /* Scale down the image */
+      margin-top: 15px;
+    }
+  
+    .hero {
+      padding: 0px 15px; /* Reduce padding for smaller screens */
+    }
+  }

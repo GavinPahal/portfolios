@@ -1,0 +1,26 @@
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.heroText {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Canvas Styling */
+.canvas {
+  width: 100%;
+  height: 400px;
+  display: block;
+}
+
+/* Clickable Apple (Fallback) */
+.appleFallback {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  width: 50px;
+  transform: translateX(-50%);
+}

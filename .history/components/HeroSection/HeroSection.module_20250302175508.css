@@ -1,0 +1,141 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background-color: rgba(134, 51, 153, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px; /* Add perspective for 3D effects */
+}
+
+.heroText h1 {
+  font-family: "philosopher";
+  margin-bottom: 300px;
+  margin-right: 600px;
+  color: rgb(255, 255, 255);
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  animation: floatText 3s ease-in-out infinite alternate;
+}
+
+/* Floating text animation */
+@keyframes floatText {
+  from {
+    transform: translateY(0) rotateX(0) rotateY(0);
+  }
+  to {
+    transform: translateY(-20px) rotateX(5deg) rotateY(5deg);
+  }
+}
+
+.branchImage {
+  position: absolute;
+  right: 40%;  
+  top: -25%;    
+  width: 85%; 
+  height: auto;
+  transform: rotate(-70deg);
+  transform-origin: top right; 
+  animation: branchReveal 2s ease-in-out forwards;
+}
+
+@keyframes branchReveal {
+  from {
+    opacity: 0;
+    transform: translateX(150px) rotate(-70deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-70deg);
+  }
+}
+
+.apple {
+  position: absolute;
+  top: 45%; 
+  right: 52%; 
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  transform: scale(0);
+  animation: growApple 1.5s ease-in-out 2s forwards;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effects */
+}
+
+/* Apple Growing Animation */
+@keyframes growApple {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hover effect for the apple */
+.apple:hover {
+  transform: scale(1.1) rotate(10deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+/* 3D Apple Container */
+.apple3DContainer {
+  position: absolute;
+  top: 45%; 
+  right: 52%; 
+  width: 150px; 
+  height: 150px;
+  opacity: 0;
+  transform: scale(0);
+  animation: growApple 1.5s ease-in-out 2s forwards;
+  cursor: pointer;
+}
+
+/* 3D Apple Hover Effect */
+.apple3DContainer:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    padding: 0 110px;
+  }
+
+  .heroText h1 {
+    font-size: 2.9rem;
+    margin-bottom: 330px;
+    margin-right: 220px; 
+    text-align: left;
+    line-height: 1.1; 
+    z-index: 1;
+  }
+
+  .branchImage {
+    top: -15%; 
+    width: 150%; 
+    max-width: none; 
+    transform: rotate(-70deg);
+  }
+
+  .apple {
+    top: 45%; 
+    right: 60%; 
+    width: 70px; 
+  }
+
+  .apple3DContainer {
+    top: 45%; 
+    right: 60%; 
+    width: 100px; 
+    height: 100px;
+  }
+}
