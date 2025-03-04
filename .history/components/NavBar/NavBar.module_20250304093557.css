@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px; 
+  padding: 15px 40px; /* Slightly wider for 1440px screens */
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,0.99781162464986) 35%, rgb(159, 84, 189) 100%);
   width: 100%;

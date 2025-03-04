@@ -3,7 +3,7 @@
   width: 100%;
   height: 120vh;
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,0.99781162464986) 35%, rgb(159, 84, 189) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,0.99781162464986) 35%, rgb(193, 112, 225) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
