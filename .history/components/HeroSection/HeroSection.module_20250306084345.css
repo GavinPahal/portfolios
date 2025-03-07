@@ -1,0 +1,160 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,0.99781162464986) 35%, rgb(159, 84, 189) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroText h1 {
+  font-family: "Philosopher", sans-serif;
+  margin-bottom: 300px;
+  margin-right: 600px;
+  color: white;
+  font-size: 5.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.branchImage {
+  position: absolute;
+  right: 40%;  
+  top: -25%;    
+  width: 85%; 
+  height: auto;
+  transform: rotate(-70deg);
+  transform-origin: top right; 
+  animation: branchReveal 2s ease-in-out forwards;
+}
+
+@keyframes branchReveal {
+  from {
+    opacity: 0;
+    transform: translateX(150px) rotate(-70deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-70deg);
+  }
+}
+
+.apple {
+  position: absolute;
+  top: 45%; 
+  right: 52%; 
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  transform: scale(0);
+  animation: growApple 1.5s ease-in-out 2s forwards;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.apple:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+@keyframes growApple {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Square Image Grid */
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.5s ease-out;
+}
+
+.showImages {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Interactive Square Boxes */
+.boxImage {
+  width: 160px; 
+  height: 160px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.boxImage img {
+  width: 80%;
+  height: auto;
+  transition: transform 0.4s ease-in-out;
+}
+
+.boxImage:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.boxImage:hover img {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    padding: 0 110px;
+  }
+
+  .heroText h1 {
+    font-size: 2.9rem;
+    margin-bottom: 330px;
+    margin-right: 220px; 
+    text-align: left;
+    line-height: 1.1; 
+    z-index: 1;
+  }
+
+  .branchImage {
+    top: -15%; 
+    width: 150%; 
+    max-width: none; 
+    transform: rotate(-70deg);
+  }
+
+  .apple {
+    top: 45%; 
+    right: 60%; 
+    width: 70px; 
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    top: 65%;
+  }
+
+  .boxImage {
+    width: 120px;
+    height: 120px;
+  }
+}
