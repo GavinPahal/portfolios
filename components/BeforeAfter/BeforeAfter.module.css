@@ -43,8 +43,8 @@
 }
 
 .sliderCircle {
-  width: 30px;        /* Larger slider circle */
-  height: 30px;       /* Larger slider circle */
+  width: 30px;        
+  height: 30px;       
   background: white;
   border: 2px solid black;
   border-radius: 50%;
