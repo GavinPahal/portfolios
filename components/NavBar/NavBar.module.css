@@ -26,12 +26,14 @@
 }
 
 .navLinks {
+  font-family: "philosopher";
   list-style: none;
   display: flex;
   gap: 25px; /* Better spacing for larger screens */
 }
 
 .navLinks li a {
+  font-family: "philosopher", "bold";
   color: white;
   text-decoration: none;
   font-size: 28px; /* Slightly larger for visibility */
