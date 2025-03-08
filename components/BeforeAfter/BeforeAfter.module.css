@@ -1,12 +1,12 @@
 .beforeAfterContainer {
-  margin-bottom: 40px;
-margin-left: 90px;
+  margin-bottom: 60px;  /* Increased bottom margin */
+  margin-left: 120px;   /* Increased left margin */
   position: relative;
   width: 100%;
-  max-width: 800px;
-  height: 400px;
+  max-width: 1000px;  /* Increased max-width */
+  height: 600px;      /* Increased height */
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 15px; /* Slightly more rounded corners */
   user-select: none;
 }
 
@@ -34,7 +34,7 @@ margin-left: 90px;
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 3px;
+  width: 5px;        
   background: white;
   cursor: ew-resize;
   z-index: 3;
@@ -45,8 +45,8 @@ margin-left: 90px;
 }
 
 .sliderCircle {
-  width: 20px;
-  height: 20px;
+  width: 30px;        /* Larger slider circle */
+  height: 30px;       /* Larger slider circle */
   background: white;
   border: 2px solid black;
   border-radius: 50%;

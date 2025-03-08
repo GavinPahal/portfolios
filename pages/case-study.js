@@ -28,24 +28,25 @@ const CaseStudy = () => {
             and send instant alerts. A translation tool ensures users understand ingredients anywhere, making
             shopping and dining easier.
           </p>
-          <div className={styles.links}>
+          <div className={styles.buttonContainer}>
             <a
               href="https://goldibite-blog.vercel.app/"
-              className={styles.underline}
+              className={styles.button}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Blog Link
+              Visit Blog
             </a>
             <a
               href="https://www.figma.com/proto/ghF7xs4mzV1Dn8Lkl1QY1N/Untitled?node-id=1-4068&t=g3isglPHdRw0JOZO-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3972&show-proto-sidebar=1"
-              className={styles.underline}
+              className={styles.button}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Figma Link
+              View Protoype 
             </a>
           </div>
+
         </div>
 
         {/* Problems & Challenges (Side-by-Side) */}
@@ -86,35 +87,35 @@ const CaseStudy = () => {
           decisions, ensuring GoldiBite met user needs and provided a valuable solution.
         </p>
         <UserResearch />
-           {/* User Persona Carousel */}
-           <h2 className={styles.headings}>User Persona</h2>
+        {/* User Persona Carousel */}
+        <h2 className={styles.headings}>User Persona</h2>
         <PersonaCarousel />
-      
 
-        
+
+
         {/* Logo Section */}
         <div className={styles.center}>
           <h2 className={styles.headings}>Logo</h2>
           <p className={styles.textBlock}>
-          The GoldiBite logo is a sleek, modern wordmark that keeps things simple while staying professional and easy to read.
-           Its minimal design makes it super versatile, and the monochromatic palette gives it a classic, and nostalgic feel.
+            The GoldiBite logo is a sleek, modern wordmark that keeps things simple while staying professional and easy to read.
+            Its minimal design makes it super versatile, and the monochromatic palette gives it a classic, and nostalgic feel.
           </p>
           <img src="/images/wordmark2 1.png" alt="GoldiBite Logo Variation" className={styles.img}
-           />
+          />
           <img
             src="/images/webHorizontal 1.png"
             alt="GoldiBite Logo"
             className={styles.imgs}
           />
-             <img
+          <img
             src="/images/Style Guide.svg"
             alt="GoldiBite Logo Variation"
             className={styles.imgss}
           />
         </div>
 
-   {/* Flow State */}
-   <h2 className={styles.heading}>Flow State</h2>
+        {/* Flow State */}
+        <h2 className={styles.heading}>Flow State</h2>
         <p className={styles.textBlock}>
           Users set preferences, scan food, and receive real-time alerts. AI analyzes ingredients,
           detects allergens, tracks nutrition, and estimates portions. If a restricted item is found,
@@ -123,10 +124,11 @@ const CaseStudy = () => {
         </p>
         <img src="/images/Group 1 1.png" className={styles.flowChart} />
 
-        {/* Low-Fi vs Hi-Fi Before/After */}
-        <h2 className={styles.heading}> Low-Fi vs Hi-Fi </h2>
-        <BeforeAfter before="/images/high.png" after="/images/hi.png" />
-
+      {/* Low-Fi vs Hi-Fi Before/After */}
+<div className={styles.beforeAfterSection}>
+  <h2 className={styles.heading}> Low-Fi vs Hi-Fi </h2>
+  <BeforeAfter before="/images/high.png" after="/images/hi.png" />
+</div>
 
         <h2 className={styles.heading}>Brochures</h2>
         <Brochures />
@@ -138,14 +140,14 @@ const CaseStudy = () => {
           informative content helped drive user engagement and interest.
         </p>
         <video width="800" height="800" controls preload="none" className={styles.video} poster="/images/bite.svg">
-      <source src="/images/Ks.mp4" type="video/mp4" />
-      <track
-        src="/path/to/captions.vtt"
-        kind="subtitles"
-        srcLang="en"
-        label="English"
-      />
-    </video>
+          <source src="/images/Ks.mp4" type="video/mp4" />
+          <track
+            src="/path/to/captions.vtt"
+            kind="subtitles"
+            srcLang="en"
+            label="English"
+          />
+        </video>
 
       </section>
       <BackToTop />
