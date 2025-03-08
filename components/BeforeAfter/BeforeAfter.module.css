@@ -1,6 +1,4 @@
 .beforeAfterContainer {
-  margin-bottom: 60px;  /* Increased bottom margin */
-  margin-left: 120px;   /* Increased left margin */
   position: relative;
   width: 100%;
   max-width: 1000px;  /* Increased max-width */
