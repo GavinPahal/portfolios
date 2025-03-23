@@ -1,62 +1,69 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
+import { useRouter } from "next/router"; // Import useRouter
 import styles from "./HeroSection.module.css";
-import Link from "next/link";
+import gsap from "gsap";
 
 const HeroSection = () => {
+  const router = useRouter(); // Initialize router
+
   const words = ["Hi, I'm", "Gavin Pahal"];
-  const [displayText, setDisplayText] = useState(["", ""]);
-  const [index, setIndex] = useState(0);
-  const [line, setLine] = useState(0);
-  const [showApple, setShowApple] = useState(false);
+  const boxesRef = useRef([]);
+
+  const images = [
+    "/images/Basketball.svg",
+    "/images/Organge cans 1.png",
+    "/images/branches.svg",
+    "/images/iphone-x-mockup 1.png",
+  ];
 
   useEffect(() => {
-    if (line < words.length && index < words[line].length) {
-      const timeout = setTimeout(() => {
-        setDisplayText((prev) => {
-          const updatedText = [...prev];
-          updatedText[line] += words[line][index];
-          return updatedText;
-        });
-        setIndex(index + 1);
-      }, 100);
-
-      return () => clearTimeout(timeout);
-    } else if (line < words.length - 1) {
-      setLine(line + 1);
-      setIndex(0);
-    }
-  }, [index, line, words]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowApple(true);
-    }, 2000); 
+    boxesRef.current.forEach((box) => {
+      gsap.to(box, {
+        x: () => Math.random() * 1600 - 800,
+        y: () => Math.random() * 1000 - 500,
+        scale: () => Math.random() * 1.2 + 0.8,
+        duration: 5 + Math.random() * 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      });
+    });
   }, []);
 
   return (
     <header className={styles.hero}>
-      <div className={styles.heroText}>
-        <h1 className={styles.highlightedText}>
-          {displayText[0]} <br /> {displayText[1]}
-        </h1>
+      <div className={styles.heroContent}>
+        <div className={styles.heroText}>
+          <h1>
+            {words[0]}
+            <br />
+            {words[1]}
+          </h1>
+          <button
+            className={styles.resumeButton}
+            onClick={() => router.push("/resume")} // Navigate on click
+          >
+            Resume
+          </button>
+        </div>
+        <div className={styles.imageGrid}>
+          {images.map((image, i) => (
+            <div
+              key={i}
+              ref={(el) => (boxesRef.current[i] = el)}
+              className={styles.imageBox}
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+              }}
+            >
+              <img src={image} alt={`Project ${i + 1}`} />
+            </div>
+          ))}
+        </div>
       </div>
-      <img
-        src="/images/branches.svg"
-        alt="Decorative Branch"
-        className={styles.branchImage}
-      />
-      {showApple && (
-      <Link href="/resume">
-      <img src="/images/apple.svg" alt="Read Resume" className={styles.apple} />
-          <img
-            src="/images/apple.svg" // Replace with correct apple path
-            alt="Read Resume"
-            className={styles.apple}
-          />
-   </Link>
-      )}
     </header>
   );
 };
 
-export default HeroSection; 
+export default HeroSection;

@@ -1,0 +1,83 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  overflow: hidden; /* Hides scrollbar while allowing mouse drag */
+  white-space: nowrap; /* Keeps all projects in a row */
+}
+
+.project {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  flex: 0 0 auto; /* Prevents shrinking */
+}
+
+.image {
+  width: 400px; /* Keeps current smaller image size */
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project:hover .image {
+  transform: scale(1.05);
+}
+
+.title {
+  position: absolute;
+  bottom: 40px; /* Adjusted for smaller image */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3rem; /* Keeps same proportions */
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  font-size: 0.85rem;
+  width: 180px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+}
+
+/* Mouse Dragging Effect */
+.projects:active {
+  cursor: grabbing;
+}
+
+/* Mobile View */
+@media screen and (max-width: 390px) {
+  .projects {
+    overflow-x: auto; /* Allows scrolling on smaller screens */
+    padding: 5px;
+  }
+
+  .project {
+    flex: 0 0 80%; /* Keeps proportional layout */
+    max-width: 280px;
+  }
+
+  .image {
+    width: 300px; /* Maintains smaller mobile size */
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .overlay {
+    font-size: 0.8rem;
+    width: 150px;
+  }
+}

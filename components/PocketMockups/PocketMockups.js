@@ -15,8 +15,18 @@ const PocketMockups = () => {
           fusing education and play. Colorful colors, playful icons, and soft edges formed a friendly, 
           accessible app. Simple layouts, large buttons, and subtle animations made it accessible and 
           usable for kids. Each element, from storytelling to research, came together into one cohesive 
-          and inclusive experience representative of the client’s vision to capture young imaginations.
+          and inclusive experience representative of the client's vision to capture young imaginations.
         </p>
+        <div className={styles.buttonContainer}>
+        <a
+              href="https://pocketpals.vercel.app/"
+              className={styles.button}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            View App
+            </a>
+          </div>
       </div>
     </section>
   );

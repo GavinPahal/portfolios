@@ -16,13 +16,13 @@ const AboutMe = () => {
                 <div className={styles.textBlock}>
                     <h2 className={styles.subheading}>Hi, I'm Gavin Pahal</h2>
                     <p>
-                        Hey! I’m Gavin, a designer and front-end developer who loves bringing creative ideas to life through clean and visually striking designs.
+                        Hey! I'm Gavin, a designer and front-end developer who loves bringing creative ideas to life through clean and visually striking designs.
                          I enjoy the challenge of blending aesthetics with functionality, making sure every project is smooth, engaging, and visually cohesive.
                         What sets me apart? My background in martial arts has shaped the way I approach design and development discipline, precision, and adaptability are second nature to me.
-                         Just like in training, I’m always pushing to refine my skills, pay attention to the little details, and find creative solutions to problems.
-                        When I’m not designing or coding, you’ll probably find me training, exploring new design trends, or fine tuning my latest project.
+                         Just like in training, I'm always pushing to refine my skills, pay attention to the little details, and find creative solutions to problems.
+                        When I'm not designing or coding, you'll probably find me training, exploring new design trends, or fine tuning my latest project.
 
-                        Let’s create something awesome together!
+                        Let's create something awesome together!
                     </p>
                 </div>
                 <div className={styles.imageWrapper}>

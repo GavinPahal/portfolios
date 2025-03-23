@@ -136,7 +136,7 @@ const CaseStudy = () => {
         <p className={styles.textBlock}>
           Capturing the essence of GoldiBite in a short video was crucial for promoting the app.
           We highlighted key features, such as allergen detection, nutrition tracking, and menu translation,
-          to show users how GoldiBite simplifies safe food choices. The video’s engaging visuals and
+          to show users how GoldiBite simplifies safe food choices. The video's engaging visuals and
           informative content helped drive user engagement and interest.
         </p>
         <video width="800" height="800" controls preload="none" className={styles.video} poster="/images/bite.svg">

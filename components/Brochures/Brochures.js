@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Brochures.module.css";
 
-const images = ["/images/one.png", "/images/two.png", "/images/three.png", "/images/four.png" ];
+const images = ["/images/four.png", "/images/two.png",  ];
 
 const  Brochures = () => {
   const [index, setIndex] = useState(0);
