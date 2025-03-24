@@ -2,8 +2,9 @@
   display: flex;
   justify-content: flex-start; /* Start scroll from the first image */
   overflow-x: auto; /* Allows horizontal scrolling */
-  white-space: nowrap;
   scroll-behavior: smooth; /* For smooth scrolling */
+  scrollbar-width: none; /* Hide scrollbar for cleaner look */
+  -ms-overflow-style: none; 
 }
 
 .project {
@@ -52,12 +53,11 @@
   opacity: 1;
 }
 
-/* Mouse Dragging Effect */
 .projects:active {
   cursor: grabbing;
 }
 
-/* Mobile View */
+
 @media screen and (max-width: 390px) {
   .projects {
     overflow-x: auto;

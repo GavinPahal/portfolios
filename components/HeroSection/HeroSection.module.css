@@ -33,27 +33,6 @@
   margin-right: 600px;
 }
 
-.resumeButton {
-  display: inline-block;
-  padding: 45px 55px; /* Bigger button */
-  font-size: 1.8rem; /* Larger text */
-  font-weight: bold;
-  color: white;
-  background-color: #720b98;
-  border-radius: 25px;
-  text-decoration: none;
-  margin-top: -250px; /* Moves it higher */
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease-in-out;
-  z-index: 1;
-}
-
-.resumeButton:hover {
-  background-color: #9e48c3;
-  transform: scale(1.05);
-}
-
 .imageGrid {
   position: absolute;
   width: 100%;

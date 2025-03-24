@@ -39,12 +39,6 @@ const HeroSection = () => {
             <br />
             {words[1]}
           </h1>
-          <button
-            className={styles.resumeButton}
-            onClick={() => router.push("/resume")} // Navigate on click
-          >
-            Resume
-          </button>
         </div>
         <div className={styles.imageGrid}>
           {images.map((image, i) => (
