@@ -2,6 +2,9 @@ import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import styles from "./HeroSection.module.css";
 import gsap from "gsap";
+import { Draggable } from "gsap/Draggable"; // Import Draggable plugin
+
+gsap.registerPlugin(Draggable); // Register GSAP plugin
 
 const HeroSection = () => {
   const router = useRouter();
@@ -16,28 +19,21 @@ const HeroSection = () => {
   ];
 
   useEffect(() => {
-    // Import Draggable dynamically to avoid server-side issues
-    import("gsap/Draggable").then(({ Draggable }) => {
-      gsap.registerPlugin(Draggable);
+    boxesRef.current.forEach((box) => {
+      gsap.to(box, {
+        x: () => Math.random() * 1600 - 800,
+        y: () => Math.random() * 1000 - 500,
+        scale: () => Math.random() * 1.2 + 0.8,
+        duration: 5 + Math.random() * 3,
+        repeat: -1,
+        yoyo: true,
+        ease: "power1.inOut",
+      });
 
-      boxesRef.current.forEach((box) => {
-        if (box) {
-          gsap.to(box, {
-            x: () => Math.random() * 1600 - 800,
-            y: () => Math.random() * 1000 - 500,
-            scale: () => Math.random() * 1.2 + 0.8,
-            duration: 5 + Math.random() * 3,
-            repeat: -1,
-            yoyo: true,
-            ease: "power1.inOut",
-          });
-
-          // Make images draggable
-          Draggable.create(box, {
-            type: "x,y",
-            bounds: "body",
-          });
-        }
+      // Make images draggable
+      Draggable.create(box, {
+        type: "x,y",
+        bounds: "body",
       });
     });
   }, []);
