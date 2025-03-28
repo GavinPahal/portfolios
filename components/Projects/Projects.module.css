@@ -2,8 +2,9 @@
   display: flex;
   justify-content: flex-start; /* Start scroll from the first image */
   overflow-x: auto; /* Allows horizontal scrolling */
-  white-space: nowrap;
   scroll-behavior: smooth; /* For smooth scrolling */
+  scrollbar-width: none; /* Hide scrollbar for cleaner look */
+  -ms-overflow-style: none; 
 }
 
 .project {
@@ -15,7 +16,7 @@
 }
 
 .image {
-  width: 450px; /* Adjust width to keep images smaller */
+  width: 620px; /* Adjust width to keep images smaller */
   height: 100%;
   transition: transform 0.3s ease-in-out;
 }
@@ -29,7 +30,7 @@
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.3rem;
+  font-size: 2.4rem;
 }
 
 .overlay {
@@ -52,12 +53,11 @@
   opacity: 1;
 }
 
-/* Mouse Dragging Effect */
 .projects:active {
   cursor: grabbing;
 }
 
-/* Mobile View */
+
 @media screen and (max-width: 390px) {
   .projects {
     overflow-x: auto;

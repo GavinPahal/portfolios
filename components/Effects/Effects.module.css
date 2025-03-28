@@ -16,13 +16,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 40px;
   }
   
   .images img {
-    width: 90%;
-    max-width: 550px;
-  aspect-ratio: `XDWC;}
+    width: 100%;
+    max-width: 700px;
+  }
   .video {
     display: block;
     margin: 2rem auto; /* Centers the video horizontally */

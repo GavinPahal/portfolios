@@ -38,6 +38,7 @@
   margin-bottom: 20px; 
 }
 
+<<<<<<< HEAD
 .resumeButton {
   font-family: "Philosopher", bold;
   padding: 23px 40px;
@@ -56,6 +57,8 @@
 }
 
 /* Floating Image Grid */
+=======
+>>>>>>> 04ba37d5f294960ad973408041f00c86fa0535dc
 .imageGrid {
   position: absolute;
   width: 100%;
@@ -64,8 +67,13 @@
 
 .imageBox {
   position: absolute;
+<<<<<<< HEAD
   width: 180px; /* Adjusted size */
   height: 180px;
+=======
+  width: 400px;
+  height: 400px;
+>>>>>>> 04ba37d5f294960ad973408041f00c86fa0535dc
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   display: flex;
