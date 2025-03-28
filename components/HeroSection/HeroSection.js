@@ -1,19 +1,21 @@
 import { useEffect, useRef } from "react";
-import { useRouter } from "next/router"; // Import useRouter
+import { useRouter } from "next/router";
 import styles from "./HeroSection.module.css";
 import gsap from "gsap";
+import { Draggable } from "gsap/Draggable"; // Import Draggable plugin
+
+gsap.registerPlugin(Draggable); // Register GSAP plugin
 
 const HeroSection = () => {
-  const router = useRouter(); // Initialize router
-
+  const router = useRouter();
   const words = ["Hi, I'm", "Gavin Pahal"];
   const boxesRef = useRef([]);
-
+  
   const images = [
     "/images/Basketball.svg",
-    "/images/Organge cans 1.png",
-    "/images/branches.svg",
-    "/images/iphone-x-mockup 1.png",
+    "/images/book.png",
+    "/images/gutiars.png",
+    "/images/glove.svg",
   ];
 
   useEffect(() => {
@@ -26,6 +28,12 @@ const HeroSection = () => {
         repeat: -1,
         yoyo: true,
         ease: "power1.inOut",
+      });
+
+      // Make images draggable
+      Draggable.create(box, {
+        type: "x,y",
+        bounds: "body",
       });
     });
   }, []);
@@ -41,7 +49,7 @@ const HeroSection = () => {
           </h1>
           <button
             className={styles.resumeButton}
-            onClick={() => router.push("/resume")} // Navigate on click
+            onClick={() => router.push("/resume")}
           >
             Resume
           </button>

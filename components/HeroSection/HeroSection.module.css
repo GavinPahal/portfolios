@@ -23,30 +23,31 @@
   max-width: 1200px;
 }
 
+.heroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
 .heroText h1 {
   font-family: "Philosopher", sans-serif;
   color: white;
   font-size: 5.5rem;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 300px;
-  margin-right: 600px;
+  margin-bottom: 20px; 
 }
 
 .resumeButton {
-  display: inline-block;
-  padding: 45px 55px; /* Bigger button */
-  font-size: 1.8rem; /* Larger text */
-  font-weight: bold;
+  font-family: "Philosopher", bold;
+  padding: 23px 40px;
+  font-size: 2.2rem;
   color: white;
   background-color: #720b98;
-  border-radius: 25px;
-  text-decoration: none;
-  margin-top: -250px; /* Moves it higher */
-  border: none;
-  cursor: pointer;
+  border-radius: 30px;
   transition: background 0.3s ease, transform 0.2s ease-in-out;
-  z-index: 1;
+  z-index: 10;
+  margin-top: 80px;
 }
 
 .resumeButton:hover {
@@ -54,6 +55,7 @@
   transform: scale(1.05);
 }
 
+/* Floating Image Grid */
 .imageGrid {
   position: absolute;
   width: 100%;
@@ -62,8 +64,8 @@
 
 .imageBox {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: 180px; /* Adjusted size */
+  height: 180px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   display: flex;
@@ -80,9 +82,11 @@
 .imageBox img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; /* Ensures the full image is visible */
+  padding: 10px; /* Adds spacing so image doesn’t touch edges */
 }
 
+/* Apple Animation */
 .apple {
   position: absolute;
   top: 45%;
@@ -106,6 +110,7 @@
   }
 }
 
+/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .hero {
     height: 70vh;
@@ -118,14 +123,13 @@
     margin-right: 220px;
   }
 
-  .imageGrid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 10px;
+  .imageBox {
+    width: 120px; /* Smaller for mobile */
+    height: 120px;
   }
 
-  .imageBox {
-    width: 150px;
-    height: 150px;
+  .imageBox img {
+    padding: 5px; /* Reduce padding for small screens */
   }
 
   .apple {
