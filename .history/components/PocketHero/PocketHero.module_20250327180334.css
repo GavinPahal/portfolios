@@ -1,0 +1,37 @@
+.hero {
+    background: #863399;
+    text-align: center;
+
+  }
+  
+  .title {
+    
+    text-align: center;
+    padding-top: 50px;
+    font-family: "philosopher", "bold";
+    color: white;
+    font-size: 70px;
+  }
+  
+  .heroImage {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 390px) {
+    .title {
+      font-size:35px; /* Reduce font size for better fit */
+      padding-top: 40px;
+      margin-left: 8px;
+    }
+  
+    .img {
+      max-width: 300px; 
+      margin-top: 15px;
+    }
+  
+    .hero {
+      padding: 0px 15px;
+    }
+  }

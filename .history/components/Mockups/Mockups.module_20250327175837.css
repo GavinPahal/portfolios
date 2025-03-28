@@ -1,0 +1,63 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+
+
+.imageContainer img {
+  margin-right: 280px;
+  width:  400px;
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right:  329px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher, bold";
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 25px;
+  line-height: 1.6
+}
+
+
+
+@media (max-width: 400px) {
+.mockups {
+  flex-direction: column; 
+  text-align: center; 
+  padding: 20px; 
+}
+
+.imageContainer img {
+  margin-right: 0; /* Remove large margin */
+  width: 100%; 
+  max-width: 340px;
+}
+
+.textContainer {
+  margin: 0 auto; 
+  max-width: 90%; 
+  margin-top: 20px; 
+}
+
+.textContainer h2 {
+  font-size: 38px; 
+}
+
+.textContainer p {
+  font-size: 18px;
+  text-align: justify; 
+  line-height: 1.8; 
+  padding: 0 10px; 
+}
+}

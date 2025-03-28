@@ -1,0 +1,68 @@
+.finalProduct {
+  text-align: center;
+  padding: 60px 40px;
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+
+.title {
+  font-family: "philosopher", "bold";
+  font-size: 32px; 
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block; 
+  margin: 15px 0;
+  font-size: 20px;
+  color: #6c1b84;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #4a1061;
+}
+
+.finalProduct img {
+  width: 100%;
+  max-width: 600px; /* Allows a slightly larger image */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 20px auto; /* Centers the image */
+}
+.clickableApp {
+  display: inline-block;
+  border: 3px solid #6c1b84; /* Creates a square border */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.clickableApp img {
+  width: 100%;
+  max-width: 500px;
+  display: block; /* Ensures no extra spacing */
+}
+
+.clickableApp:hover {
+  background-color: #6c1b84;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .finalProduct {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .link {
+    font-size: 18px;
+  }
+
+  .finalProduct img {
+    max-width: 500px;
+  }
+}

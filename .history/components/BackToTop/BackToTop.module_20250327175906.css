@@ -1,0 +1,32 @@
+.scrollContainer {
+    position: fixed;
+    bottom: 80px; 
+    right: 20px;
+    z-index: 1000; 
+    cursor: pointer;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .scrollContainer:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  .scrollText {
+    font-family: "philosopher", "bold";
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .underline {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin: 5px auto 0;
+  }
+  

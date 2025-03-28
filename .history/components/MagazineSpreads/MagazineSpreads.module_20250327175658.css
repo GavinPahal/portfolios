@@ -1,0 +1,47 @@
+.dielines {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Philosopher", sans-serif;
+  font-weight: bold; 
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.images {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.images img {
+  width: 90%;
+  max-width: 800px;
+}
+
+
+@media screen and (max-width: 430px) {
+  .title {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  .dielines {
+    padding: 30px 15px; /* Reduce padding */
+  }
+
+  .images {
+    margin-left: 0; /* Remove left margin for better alignment */
+    gap: 50px; /* Reduce spacing */
+  }
+
+  .images img {
+    width: 100%; /* Make images fully responsive */
+    max-width: 350px; /* Adjust for smaller screens */
+  }
+}
