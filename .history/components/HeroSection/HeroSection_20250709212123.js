@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./HeroSection.module.css";
+import Link from "next/link";
 
 const HeroSection = () => {
   const words = ["Hi, I'm", "Gavin Pahal"];
@@ -23,35 +24,34 @@ const HeroSection = () => {
     } else if (line < words.length - 1) {
       setLine(line + 1);
       setIndex(0);
+    } else {
+      setTimeout(() => setShowApple(true), 2000);
     }
   }, [index, line, words]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setShowApple(true);
-    }, 2000); // Delay apple growth after branch appears
-  }, []);
-
   return (
     <header className={styles.hero}>
-      <div className={styles.heroText}>
-        <h1 className={styles.highlightedText}>
-          {displayText[0]} <br /> {displayText[1]}
-        </h1>
+      <div className={styles.heroContent}>
+        <div className={styles.heroText}>
+          <h1>{displayText[0]} <br /> {displayText[1]}</h1>
+          <Link href="/resume" className={styles.resumeButton}>
+            Resume
+          </Link>
+        </div>
+        <div className={styles.imageGrid}>
+          {["box1.png", "box2.png", "box3.png", "box4.png"].map((box, i) => (
+            <div key={i} className={styles.imageBox}>
+              <img src={`/images/${box}`} alt={`Project ${i + 1}`} />
+            </div>
+          ))}
+        </div>
       </div>
-      <img
-        src="/images/branches.svg"
-        alt="Decorative Branch"
-        className={styles.branchImage}
-      />
       {showApple && (
-        <a href="/Resume.js" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/images/apple.svg" // Replace with correct apple path
-            alt="Read Resume"
-            className={styles.apple}
-          />
-        </a>
+        <img
+          src="/images/apple.png"
+          alt="Apple"
+          className={styles.apple}
+        />
       )}
     </header>
   );

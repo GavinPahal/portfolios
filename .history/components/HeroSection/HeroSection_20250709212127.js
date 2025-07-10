@@ -45,7 +45,7 @@ const HeroSection = () => {
         className={styles.branchImage}
       />
       {showApple && (
-        <a href="/Resume.js" target="_blank" rel="noopener noreferrer">
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
           <img
             src="/images/apple.svg" // Replace with correct apple path
             alt="Read Resume"
