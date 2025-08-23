@@ -33,6 +33,12 @@ const projects = [
     link: "/After",
     description: "Helping travelers with food allergies find safe meals.",
   },
+    {
+    title: "Circular Materials",
+    image: "/images/Screensho.png",
+    link: "/Material",
+    description: "Helping travelers with food allergies find safe meals.",
+  },
 ];
 
 const Projects = () => {

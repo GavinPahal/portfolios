@@ -1,0 +1,42 @@
+.styleGuide {
+  max-width: 1600px; /* wider for iMac */
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.title {
+  font-family: Philosopher, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.images img {
+  width: 32%; /* 3 images side by side */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.images img:hover {
+  transform: scale(1.06);
+}
+
+.desc {
+ font-family: Philosopher;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
