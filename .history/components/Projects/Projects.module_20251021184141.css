@@ -61,16 +61,17 @@
 }
 
 .title {
-  font-weight: bold;
+  font-weight: ;
   font-family: Philosopher, sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #ffffff;
   margin: 0.4rem 0;
 }
 
 .description {
   font-family: Philosopher, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #ffffff;
   line-height: 1.4;
 }

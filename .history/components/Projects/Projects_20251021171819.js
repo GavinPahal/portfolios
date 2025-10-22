@@ -40,13 +40,8 @@ const projects = [
   },
 ];
 
-// identical feel to motion.dev scroll animations
 const imageVariants = {
-  offscreen: {
-    y: 200,
-    opacity: 0,
-    rotate: -10,
-  },
+  offscreen: { y: 150, opacity: 0, rotate: -8 },
   onscreen: {
     y: 0,
     opacity: 1,
@@ -69,7 +64,7 @@ export default function Projects() {
           className={styles.project}
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ amount: 0.6, once: false }} // fires when entering/exiting viewport
+          viewport={{ once: true, amount: 0.5 }}
         >
           <div className={styles.card}>
             <motion.img

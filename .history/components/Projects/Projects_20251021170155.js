@@ -40,25 +40,6 @@ const projects = [
   },
 ];
 
-// identical feel to motion.dev scroll animations
-const imageVariants = {
-  offscreen: {
-    y: 200,
-    opacity: 0,
-    rotate: -10,
-  },
-  onscreen: {
-    y: 0,
-    opacity: 1,
-    rotate: 0,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8,
-    },
-  },
-};
-
 export default function Projects() {
   return (
     <section className={styles.projects}>
@@ -67,17 +48,20 @@ export default function Projects() {
           key={i}
           href={p.link}
           className={styles.project}
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ amount: 0.6, once: false }} // fires when entering/exiting viewport
+          initial={{ opacity: 0, y: 30 }}
+          animate={{
+            opacity: [0.5, 1, 0.5],
+            y: [0, -10, 0],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.3,
+          }}
         >
           <div className={styles.card}>
-            <motion.img
-              src={p.image}
-              alt={p.title}
-              className={styles.image}
-              variants={imageVariants}
-            />
+            <img src={p.image} alt={p.title} className={styles.image} />
             <div className={styles.textBox}>
               <h3 className={styles.title}>{p.title}</h3>
               <p className={styles.description}>{p.description}</p>

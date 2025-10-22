@@ -40,17 +40,16 @@ const projects = [
   },
 ];
 
-// identical feel to motion.dev scroll animations
+// Vue-style animation
 const imageVariants = {
   offscreen: {
-    y: 200,
+    y: 300,
     opacity: 0,
-    rotate: -10,
   },
   onscreen: {
-    y: 0,
+    y: 50,
     opacity: 1,
-    rotate: 0,
+    rotate: -10,
     transition: {
       type: "spring",
       bounce: 0.4,
@@ -63,27 +62,27 @@ export default function Projects() {
   return (
     <section className={styles.projects}>
       {projects.map((p, i) => (
-        <motion.a
-          key={i}
-          href={p.link}
-          className={styles.project}
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ amount: 0.6, once: false }} // fires when entering/exiting viewport
-        >
-          <div className={styles.card}>
-            <motion.img
-              src={p.image}
-              alt={p.title}
-              className={styles.image}
-              variants={imageVariants}
-            />
-            <div className={styles.textBox}>
-              <h3 className={styles.title}>{p.title}</h3>
-              <p className={styles.description}>{p.description}</p>
-            </div>
+        <div key={i} className={styles.project}>
+          {/* Static background card */}
+          <div className={styles.cardBg}></div>
+
+          {/* Animated image */}
+          <motion.div
+            className={styles.imageWrapper}
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ amount: 0.8 }}
+            variants={imageVariants}
+          >
+            <img src={p.image} alt={p.title} className={styles.image} />
+          </motion.div>
+
+          {/* Text stays still */}
+          <div className={styles.textBox}>
+            <h3 className={styles.title}>{p.title}</h3>
+            <p className={styles.description}>{p.description}</p>
           </div>
-        </motion.a>
+        </div>
       ))}
     </section>
   );

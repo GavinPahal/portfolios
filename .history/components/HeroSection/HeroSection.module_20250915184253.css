@@ -3,26 +3,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 15px 40px; 
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,9,121,0.99781162464986) 35%, rgb(159, 84, 189) 100%);
   width: 100%;
+  transition: all 0.3s ease-in-out;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  transition: all 0.3s ease-in-out;
 }
 
 /* Floating navbar styles */
 .navbar.floating {
-  background: rgba(2,0,36,0.95);
+  background: rgba(2, 0, 36, 0.95);
   background: linear-gradient(90deg, rgba(2,0,36,0.95) 0%, rgba(82,9,121,0.95) 35%, rgba(159, 84, 189, 0.95) 100%);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  box-shadow: 0 2px 25px rgba(159, 84, 189, 0.3);
-  padding: 10px 40px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+  padding: 10px 30px; /* Slightly reduced padding when floating */
+  border-radius: 20px;
+  margin: 10px 20px;
+  width: calc(100% - 40px);
+}
+
+/* Optional: Add some body padding to account for fixed navbar */
+.body {
+  padding-top: 95px; /* Adjust based on your navbar height */
 }
 
 .logoContainer {
@@ -31,23 +39,21 @@
 }
 
 .logo {
-  width: 65px;
+  width: 65px; 
   margin-right: 12px;
-  transition: width 0.3s ease;
 }
 
 .name {
   color: white;
-  font-size: 24px;
+  font-size: 24px; 
   font-weight: bold;
-  transition: font-size 0.3s ease;
 }
 
 .navLinks {
   font-family: "philosopher";
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 25px; /* Better spacing for larger screens */
 }
 
 .navLinks li a {
@@ -55,20 +61,11 @@
   color: white;
   text-decoration: none;
   font-size: 28px;
-  transition: font-size 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
-/* Floating state adjustments */
-.navbar.floating .logo {
-  width: 50px;
-}
-
-.navbar.floating .name {
-  font-size: 20px;
-}
-
-.navbar.floating .navLinks li a {
-  font-size: 24px;
+.navLinks li a:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 430px) {
@@ -77,7 +74,14 @@
   }
   
   .navbar.floating {
-    padding: 6px 12px;
+    padding: 6px 15px;
+    border-radius: 15px;
+    margin: 8px 10px;
+    width: calc(100% - 20px);
+  }
+  
+ .body {
+    padding-top: 60px; /* Reduced for mobile */
   }
   
   .logo {
@@ -85,16 +89,8 @@
     margin-right: 5px;
   }
   
-  .navbar.floating .logo {
-    width: 30px;
-  }
-  
   .name {
     font-size: 12px;
-  }
-  
-  .navbar.floating .name {
-    font-size: 10px;
   }
   
   .navLinks {
@@ -103,9 +99,5 @@
   
   .navLinks li a {
     font-size: 12px;
-  }
-  
-  .navbar.floating .navLinks li a {
-    font-size: 11px;
   }
 }

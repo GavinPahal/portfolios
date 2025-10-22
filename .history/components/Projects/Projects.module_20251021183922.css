@@ -54,23 +54,23 @@
 .textBox {
   position: relative;
   z-index: 2;
-  background: rgba(215, 112, 250, 0.731);
+  background: rgba(215, 112, 250, 0.208);
   padding: 1rem;
   text-align: center;
   margin-top: auto;
 }
 
 .title {
-  font-weight: bold;
-  font-family: Philosopher, sans-serif;
-  font-size: 1.8rem;
+    font-family:Philosopher;
+  font-size: 1.3rem;
+  font-weight: 600;
   color: #ffffff;
   margin: 0.4rem 0;
 }
 
 .description {
-  font-family: Philosopher, sans-serif;
-  font-size: 1.1rem;
+    font-family:" Philosopher";
+  font-size: 1rem;
   color: #ffffff;
   line-height: 1.4;
 }

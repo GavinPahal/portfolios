@@ -4,10 +4,10 @@
   gap: 2rem;
   justify-items: center;
   align-items: start;
-  padding:  2rem 0; /* reduced top + removed bottom padding */
+  padding: 2rem 2rem 0; /* reduced top + removed bottom padding */
   width: 100%;
   max-width: 1200px;
-  margin: -40px auto 0; /* moves entire section up */
+  margin-top: -425px ;
 }
 
 .project {
@@ -22,7 +22,7 @@
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 16px;
-  background: #810bc6;
+  background: #f5f5f5;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -54,24 +54,22 @@
 .textBox {
   position: relative;
   z-index: 2;
-  background: rgba(215, 112, 250, 0.731);
+  background: rgba(255, 255, 255, 0.9);
   padding: 1rem;
   text-align: center;
   margin-top: auto;
 }
 
 .title {
-  font-weight: bold;
-  font-family: Philosopher, sans-serif;
-  font-size: 1.8rem;
-  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
   margin: 0.4rem 0;
 }
 
 .description {
-  font-family: Philosopher, sans-serif;
-  font-size: 1.1rem;
-  color: #ffffff;
+  font-size: 1rem;
+  color: #555;
   line-height: 1.4;
 }
 
@@ -82,6 +80,7 @@
   }
 
   .card {
+      margin-top: -120px ;
     max-width: 100%;
   }
 }
