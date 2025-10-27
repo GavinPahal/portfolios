@@ -47,7 +47,15 @@
 }
 @media (max-width: 480px) {
   .navbar {
-    padding: 0.8rem 5vw; /* smaller padding */
+    padding: 0.8rem 5vw;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .logoContainer {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .logo {
@@ -56,14 +64,17 @@
   }
 
   .name {
-    font-size: 0.8rem; /* slightly smaller */
+    font-size: 1rem;
   }
 
   .navLinks {
-    gap: 1rem; /* tighter spacing */
+    width: 100%;
+    justify-content: space-around;
+    gap: 1rem;
   }
 
   .navLinks a {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.6rem;
   }
 }
