@@ -6,53 +6,58 @@ const HeroSection = () => {
   const [displayText, setDisplayText] = useState(["", ""]);
   const [index, setIndex] = useState(0);
   const [line, setLine] = useState(0);
-  const [showApple, setShowApple] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
+  // Typing animation
   useEffect(() => {
     if (line < words.length && index < words[line].length) {
       const timeout = setTimeout(() => {
         setDisplayText((prev) => {
-          const updatedText = [...prev];
-          updatedText[line] += words[line][index];
-          return updatedText;
+          const updated = [...prev];
+          updated[line] += words[line][index];
+          return updated;
         });
         setIndex(index + 1);
       }, 100);
-
       return () => clearTimeout(timeout);
     } else if (line < words.length - 1) {
       setLine(line + 1);
       setIndex(0);
     }
-  }, [index, line, words]);
+  }, [index, line]);
 
+  // Scroll tracking for fade + parallax
   useEffect(() => {
-    setTimeout(() => {
-      setShowApple(true);
-    }, 2000); // Delay apple growth after branch appears
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Fade and motion logic
+  const fadeOut = Math.max(0, 1 - scrollY / 300); // controls disappearance rate
+  const moveUp = Math.min(scrollY / 3, 100); // slight upward motion
+  const imageShift = scrollY * 0.2; // parallax effect
 
   return (
     <header className={styles.hero}>
-      <div className={styles.heroText}>
+      <div
+        className={styles.heroText}
+        style={{
+          opacity: fadeOut,
+          transform: `translateY(-${moveUp}px)`,
+        }}
+      >
         <h1 className={styles.highlightedText}>
           {displayText[0]} <br /> {displayText[1]}
         </h1>
       </div>
+
       <img
         src="/images/branches.svg"
         alt="Decorative Branch"
         className={styles.branchImage}
+        style={{ transform: `translateY(${imageShift}px)` }}
       />
-      {showApple && (
-        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/images/apple.svg" // Replace with correct apple path
-            alt="Read Resume"
-            className={styles.apple}
-          />
-        </a>
-      )}
     </header>
   );
 };

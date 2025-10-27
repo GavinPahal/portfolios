@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10vw;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.heroText {
+  font-family: "Times New Roman", serif;
+  font-size: 3rem;
+  line-height: 1.2;
+  color: #111;
+  z-index: 2;
+  transition: all 0.3s ease-out;
+}
+
+.highlightedText {
+  margin: 0;
+  white-space: pre-line;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.branchImage {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  width: 35%;
+  max-width: 500px;
+  transition: transform 0.2s ease-out;
+  z-index: 1;
+}

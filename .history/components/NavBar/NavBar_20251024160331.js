@@ -11,8 +11,9 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const fadeIn = Math.min(1, scrollY / 300);
-  const backgroundAlpha = Math.min(0.95, scrollY / 250);
+  // Control opacity and background blending
+  const fadeIn = Math.min(1, scrollY / 400); // sync with HeroSection fade
+  const backgroundAlpha = Math.min(0.9, scrollY / 300); // slightly delay full opacity
 
   return (
     <nav

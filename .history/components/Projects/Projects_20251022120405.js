@@ -40,7 +40,7 @@ const projects = [
   },
 ];
 
-
+// identical feel to motion.dev scroll animations
 const imageVariants = {
   offscreen: {
     y: 200,
