@@ -2,7 +2,7 @@
   text-wrap: pretty;
   width: 100%;
   margin: auto;
-  font-family: "Philosopher", sans-serif;
+  font-family: "Philosopher", bold;
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -17,10 +17,11 @@
 
 .hero {
   text-align: center;
-  background: linear-gradient(135deg, rgba(134, 51, 153, 1), rgba(74, 20, 140, 1));
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 100px 0;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  padding: 90px 0;
+  margin-top: -5px;
   animation: slideIn 1s ease-in-out;
 }
 
@@ -89,7 +90,7 @@
 }
 
 .imageWrapper img {
-  margin-right: 30px;
+  margin-right: 10px;
   width: 90%;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
