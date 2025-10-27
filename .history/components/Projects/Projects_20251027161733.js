@@ -18,7 +18,7 @@ const projects = [
     title: "Magazine",
     image: "/images/Rectangle 65 (1).png",
     link: "/magazine",
-    description: "Crafted magazine layouts that balance visuals and content.",
+    description: "Helping travelers with food allergies find safe meals.",
   },
   {
     title: "GoldiBite",
@@ -30,13 +30,13 @@ const projects = [
     title: "AfterEffects",
     image: "/images/Rectangle 68.png",
     link: "/After",
-    description: "Produced motion graphics and animations bringing ideas to life.",
+    description: "Helping travelers with food allergies find safe meals.",
   },
   {
     title: "Circular Materials",
     image: "/images/Screensho.png",
     link: "/Material",
-    description: "Designed sustainable solutions at Circular Materials.",
+    description: "Helping travelers with food allergies find safe meals.",
   },
 ];
 

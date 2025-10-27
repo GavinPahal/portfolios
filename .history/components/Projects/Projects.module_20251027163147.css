@@ -1,0 +1,77 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 10vw;
+}
+
+.project {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project:hover .image {
+  transform: scale(1.05);
+}
+
+.textBox {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.8); /* optional overlay */
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.project:hover .textBox {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-family: "Times New Roman", serif;
+  font-size: 1.1rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.description {
+  font-family: "Times New Roman", serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}

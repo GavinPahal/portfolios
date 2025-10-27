@@ -6,37 +6,37 @@ const projects = [
     title: "Mockups",
     image: "/images/Rectangle 77 (1).png",
     link: "/can",
-    description: "High-quality product mockups to showcase your designs.",
+    description: ".",
   },
   {
     title: "PocketPals",
     image: "/images/Rectangle 75.png",
     link: "/pocket-pals",
-    description: "An animal learning app for kids.",
+    description: ".",
   },
   {
     title: "Magazine",
     image: "/images/Rectangle 65 (1).png",
     link: "/magazine",
-    description: "Crafted magazine layouts that balance visuals and content.",
+    description: ".",
   },
   {
     title: "GoldiBite",
     image: "/images/bite.png",
     link: "/case-study",
-    description: "Helping travelers with food allergies find safe meals.",
+    description: ".",
   },
   {
     title: "AfterEffects",
     image: "/images/Rectangle 68.png",
     link: "/After",
-    description: "Produced motion graphics and animations bringing ideas to life.",
+    description: ".",
   },
   {
     title: "Circular Materials",
     image: "/images/Screensho.png",
     link: "/Material",
-    description: "Designed sustainable solutions at Circular Materials.",
+    description: ".",
   },
 ];
 

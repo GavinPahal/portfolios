@@ -26,7 +26,7 @@ const HeroSection = () => {
     }
   }, [index, line]);
 
-
+  // Scroll tracking for fade + parallax
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -34,9 +34,9 @@ const HeroSection = () => {
   }, []);
 
   // Fade and motion logic
-  const fadeOut = Math.max(0, 1 - scrollY / 300); 
-  const moveUp = Math.min(scrollY / 3, 100); 
-  const imageShift = scrollY * 0.2; 
+  const fadeOut = Math.max(0, 1 - scrollY / 300); // controls disappearance rate
+  const moveUp = Math.min(scrollY / 3, 100); // slight upward motion
+  const imageShift = scrollY * 0.2; // parallax effect
 
   return (
     <header className={styles.hero}>

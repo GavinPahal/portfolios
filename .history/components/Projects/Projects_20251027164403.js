@@ -30,13 +30,13 @@ const projects = [
     title: "AfterEffects",
     image: "/images/Rectangle 68.png",
     link: "/After",
-    description: "Produced motion graphics and animations bringing ideas to life.",
+    description: "Helping travelers with food allergies find safe meals.",
   },
   {
     title: "Circular Materials",
     image: "/images/Screensho.png",
     link: "/Material",
-    description: "Designed sustainable solutions at Circular Materials.",
+    description: "Helping travelers with food allergies find safe meals.",
   },
 ];
 
