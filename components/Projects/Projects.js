@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: "PocketPals",
-    image: "/images/Rectangle 75.png",
+    image: "/images/Phones.png",
     link: "/pocket-pals",
     description: "An animal learning app for kids.",
   },
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "GoldiBite",
-    image: "/images/bite.png",
+    image: "/images/Picture.png",
     link: "/case-study",
     description: "Helping travelers with food allergies find safe meals.",
   },
