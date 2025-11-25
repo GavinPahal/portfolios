@@ -28,13 +28,13 @@ const projects = [
   },
   {
     title: "AfterEffects",
-    image: "/images/Rectangle 68.png",
+    image: "/images/Computer.png",
     link: "/After",
     description: "Produced motion graphics and animations bringing ideas to life.",
   },
   {
     title: "Circular Materials",
-    image: "/images/Screensho.png",
+    image: "/images/Brochure.png",
     link: "/Material",
     description: "Designed sustainable solutions at Circular Materials.",
   },
