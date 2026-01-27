@@ -26,7 +26,7 @@ const AboutMe = () => {
                     </p>
                 </div>
                 <div className={styles.imageWrapper}>
-                    <img src="/images/unnamed.jpg" alt="Gavin Pahal" />
+                    <img src="/images/Image.jpeg" alt="Gavin Pahal" />
                 </div>
             </section>
             
