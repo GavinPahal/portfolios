@@ -14,10 +14,10 @@
 .heroText {
   display: flex;
   flex-direction: column;
-  align-items: center;      
-  justify-content: center;  
+  align-items: center;      /* horizontal center */
+  justify-content: center;  /* vertical center */
   text-align: center;
-  font-family: "philosopher", "bold";
+  font-family: "Times New Roman", serif;
   font-size: 140px;
   font-weight: 100;
   color: #111;
@@ -37,7 +37,7 @@
 .subText {
   max-width: 520px;
   font-size: 18px;
-  font-family: "philosopher";
+  font-family: system-ui, sans-serif;
   line-height: 1.6;
   margin-top: 32px;
   color: #333;

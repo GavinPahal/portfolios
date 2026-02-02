@@ -4,20 +4,19 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center; /* real centering */
+  justify-content: space-between;
   background-color: #fff;
   overflow: hidden;
   padding: 0 8vw;
 }
 
-/* Main text container */
+/* Left column — your name */
 .heroText {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;      
-  justify-content: center;  
-  text-align: center;
-  font-family: "philosopher", "bold";
+  justify-content: center;
+  font-family: "Times New Roman", serif;
   font-size: 140px;
   font-weight: 100;
   color: #111;
@@ -25,53 +24,17 @@
   letter-spacing: 0.02em;
   transition: all 0.4s ease-out;
   z-index: 2;
+  margin-bottom: 300px;
 }
 
-/* Name text */
+/* “Hi, I’m Gavin Pahal” */
 .highlightedText {
+  margin-left: 4vw;       /* pushes text slightly inward like Nutrad */
   white-space: pre-line;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-/* Description text */
-.subText {
-  max-width: 520px;
-  font-size: 18px;
-  font-family: "philosopher";
-  line-height: 1.6;
-  margin-top: 32px;
-  color: #333;
-}
-
-/* Scroll arrow */
-.scrollArrow {
-  margin-top: 48px;
-  width: 22px;
-  height: 22px;
-  border-left: 1.5px solid #111;
-  border-bottom: 1.5px solid #111;
-  transform: rotate(-45deg);
-  animation: bounce 1.8s infinite ease-in-out;
-  opacity: 0.8;
-}
-
-/* Arrow animation */
-@keyframes bounce {
-  0% {
-    transform: translateY(0) rotate(-45deg);
-    opacity: 0.4;
-  }
-  50% {
-    transform: translateY(10px) rotate(-45deg);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0) rotate(-45deg);
-    opacity: 0.4;
-  }
-}
-
-/* Decorative image */
+/* Right-side decorative image (branch/apple) */
 .branchImage {
   position: absolute;
   right: 6vw;
@@ -83,6 +46,7 @@
   z-index: 1;
 }
 
+/* Small hover wiggle if desired later */
 .branchImage:hover {
   transform: translateY(-3px);
 }
@@ -101,13 +65,18 @@
   transform: scale(1.05);
 }
 
-/* Mobile */
+/* Responsive tweak for mobile */
 @media (max-width: 768px) {
   .hero {
-    padding: 12vh 6vw;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20vh 6vw 10vh;
   }
 
   .heroText {
     font-size: 6rem;
+    margin-left: 0;
   }
+
+
 }
