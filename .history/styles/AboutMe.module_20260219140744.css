@@ -112,7 +112,7 @@
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: rgba(134, 51, 153, 1);
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
@@ -176,12 +176,25 @@
     font-size: 36px;
   }
 
-  .skillsList {
-    font-size: 18px;
+ .contactSection {
+    padding: 60px 20px;
   }
 
-  .skillsList li {
-    padding: 12px 20px;
-    font-size: 18px;
+  .contactHeader h2 {
+    font-size: 36px;
+  }
+
+  .contactHeader h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .submitBtn {
+    width: 100%;
   }
 }

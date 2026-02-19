@@ -116,30 +116,95 @@
   text-align: center;
 }
 
-.skillsList {
-  list-style-type: none;
-  padding: 0;
-  font-size: 20px;
+.contactSection {
+  margin-top: 120px;
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.contactHeader h2 {
+  font-size: 56px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.contactHeader h3 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  text-align: left;
+}
+
+.contactForm {
+  width: 100%;
+}
+
+.row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
-.skillsList li {
-  margin: 10px 0;
-  background: rgba(134, 51, 153, 0.1);
-  padding: 15px 25px;
-  border-radius: 10px;
-  border: 1px solid rgba(134, 51, 153, 0.3);
-  transition: background 0.3s ease, transform 0.3s ease;
+.inputGroup {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
-.skillsList li:hover {
-  background: rgba(134, 51, 153, 0.2);
-  transform: translateY(-5px);
+.inputGroup label {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
 }
 
+.inputGroup input {
+  padding: 18px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.inputGroup input:focus {
+  border: 1px solid #000;
+}
+
+.textAreaGroup textarea {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  font-size: 16px;
+  resize: none;
+  outline: none;
+  margin-bottom: 40px;
+  transition: border 0.3s ease;
+}
+
+.textAreaGroup textarea:focus {
+  border: 1px solid #000;
+}
+
+.submitBtn {
+  padding: 18px 40px;
+  background: #111;
+  color: white;
+  border: none;
+  letter-spacing: 3px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.submitBtn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
 /* Media Queries for iPhone 12 (390x844) */
 @media (max-width: 390px) {
   .hero {
@@ -176,12 +241,25 @@
     font-size: 36px;
   }
 
-  .skillsList {
-    font-size: 18px;
+ .contactSection {
+    padding: 60px 20px;
   }
 
-  .skillsList li {
-    padding: 12px 20px;
-    font-size: 18px;
+  .contactHeader h2 {
+    font-size: 36px;
   }
+
+  .contactHeader h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .submitBtn {
+    width: 100%;
+  } 
 }
