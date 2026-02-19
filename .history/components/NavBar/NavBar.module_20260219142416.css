@@ -14,7 +14,7 @@
 .logoContainer {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem; /* increased */
 }
 
 .logo {
@@ -25,13 +25,13 @@
 
 .name {
   font-family: "Times New Roman", serif;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #111;
 }
 
 .navLinks {
   display: flex;
-  gap: 2rem;
+  gap: 3rem; /* increased */
   list-style: none;
 }
 
@@ -40,14 +40,16 @@
   text-decoration: none;
   color: #111;
   transition: color 0.3s ease;
+  font-size: 1.3rem;
 }
 
 .navLinks a:hover {
   color: #888;
 }
+
 @media (max-width: 480px) {
   .navbar {
-    padding: 0.8rem 5vw; /* smaller padding */
+    padding: 0.8rem 5vw;
   }
 
   .logo {
@@ -56,14 +58,14 @@
   }
 
   .name {
-    font-size: 1rem; /* slightly smaller */
+    font-size: 1.2rem;
   }
 
   .navLinks {
-    gap: 1rem; /* tighter spacing */
+    gap: 1.8rem; /* increased */
   }
 
   .navLinks a {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
