@@ -18,6 +18,7 @@ const Home = () => {                   // ← Renamed for clarity (optional but 
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.gavinpahal.com/" />
 
+        {/* Open Graph tags – improves how your site looks when shared on social media */}
         <meta property="og:title" content="Gavin Pahal – Digital Designer" />
         <meta
           property="og:description"
@@ -27,7 +28,7 @@ const Home = () => {                   // ← Renamed for clarity (optional but 
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="Front.png" 
+          content="Front.png" // Replace with real image URL from your public folder
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>

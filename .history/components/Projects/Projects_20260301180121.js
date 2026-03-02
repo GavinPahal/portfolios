@@ -10,12 +10,6 @@ const projects = [
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {
-    title: "Case Study",
-    image: "/images/Picture.png",
-    link: "/case-study",
-    description: "Helping travelers with food allergies find safe meals.",
-  },
-    {
     title: "Mockups",
     image: "/images/Rectangle 77 (1).png",
     link: "/can",
@@ -32,6 +26,12 @@ const projects = [
     image: "/images/Rectangle 65 (1).png",
     link: "/magazine",
     description: "Crafted magazine layouts that balance visuals and content.",
+  },
+  {
+    title: "Case Study",
+    image: "/images/Picture.png",
+    link: "/case-study",
+    description: "Helping travelers with food allergies find safe meals.",
   },
   {
     title: "Motion Graphics",
