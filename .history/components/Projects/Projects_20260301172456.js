@@ -33,7 +33,7 @@ const projects = [
     description: "Produced motion graphics and animations bringing ideas to life.",
   },
   {
-    title: "Intersnship",
+    title: "Circular Materials",
     image: "/images/Brochure.png",
     link: "/Material",
     description: "Designed sustainable solutions at Circular Materials.",

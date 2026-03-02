@@ -32,7 +32,7 @@
 }
 
 .desc {
-  font-family: "Philosopher", sans-serif;
+ font-family: Philosopher;
   font-size: 1.2rem;
   color: #333;
   line-height: 1.8;

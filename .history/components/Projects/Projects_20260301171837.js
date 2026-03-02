@@ -9,7 +9,7 @@ const projects = [
     description: "High-quality product mockups to showcase your designs.",
   },
   {
-    title: "Design Engineer",
+    title: "PocketPals",
     image: "/images/Phones.png",
     link: "/pocket-pals",
     description: "An animal learning app for kids.",
@@ -21,7 +21,7 @@ const projects = [
     description: "Crafted magazine layouts that balance visuals and content.",
   },
   {
-    title: "Product Build",
+    title: "GoldiBite",
     image: "/images/Picture.png",
     link: "/case-study",
     description: "Helping travelers with food allergies find safe meals.",
@@ -33,7 +33,7 @@ const projects = [
     description: "Produced motion graphics and animations bringing ideas to life.",
   },
   {
-    title: "Intersnship",
+    title: "Circular Materials",
     image: "/images/Brochure.png",
     link: "/Material",
     description: "Designed sustainable solutions at Circular Materials.",

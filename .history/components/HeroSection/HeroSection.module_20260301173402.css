@@ -17,7 +17,7 @@
   align-items: center;      
   justify-content: center;  
   text-align: center;
-  font-family: "Philosopher", sans-serif, bold;
+  font-family: "philosopher", "bold";
   font-size: 140px;
   font-weight: 100;
   color: #111;
@@ -37,7 +37,7 @@
 .subText {
   max-width: 520px;
   font-size: 18px;
-  font-family: "Philosopher", sans-serif;
+  font-family: "philosopher", sans-serif;
   line-height: 1.6;
   margin-top: 32px;
   color: #333;
