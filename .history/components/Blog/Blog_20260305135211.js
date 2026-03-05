@@ -12,7 +12,7 @@ const Blog = () => {
       </div>
 
       <p className={styles.desc}>
-   These visuals were crafted to bridge the gap between concept and reality. By transforming abstract blog topics into detailed, realistic mockups, I captured the specific essence and style of each post. This approach allows viewers to connect with the content in a tangible way, turning digital ideas into a physical brand experience.
+   "These visuals were crafted to bridge the gap between concept and reality. By transforming abstract blog topics into detailed, realistic mockups, I captured the specific essence and style of each post. This approach allows viewers to connect with the content in a tangible way, turning digital ideas into a physical brand experience."
       </p>
     </section>
   );
