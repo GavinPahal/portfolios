@@ -6,7 +6,7 @@ const projects = [
     
     title: "Internship",
     image: "/images/Brochure.png",
-    link: "/internship",
+    link: "/Material",
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {
@@ -18,26 +18,26 @@ const projects = [
     {
     title: "Mockups",
     image: "/images/Rectangle 77 (1).png",
-    link: "/mockups",
+    link: "/can",
     description: "High-quality product mockups to showcase your designs.",
   },
   {
     title: "Design Engineer",
     image: "/images/Phones.png",
-    link: "/design-engineer",
+    link: "/pocket-pals",
     description: "An animal learning app for kids.",
   },
   {
     title: "Print Layouts",
     image: "/images/Rectangle 65 (1).png",
-    link: "/print-layouts",
+    link: "/magazine",
     description: "Crafted magazine layouts that balance visuals and content.",
   },
   {
     title: "Motion Graphics",
     image: "/images/Computer.png",
-    link: "/motion-graphics",
-    description: "Produced motion graphics and animations, bringing ideas to life.",
+    link: "/After",
+    description: "Produced motion graphics and animations bringing ideas to life.",
   },
 ];
 

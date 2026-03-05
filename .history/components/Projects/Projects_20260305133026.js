@@ -6,7 +6,7 @@ const projects = [
     
     title: "Internship",
     image: "/images/Brochure.png",
-    link: "/internship",
+    link: "/material",
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {
@@ -18,13 +18,13 @@ const projects = [
     {
     title: "Mockups",
     image: "/images/Rectangle 77 (1).png",
-    link: "/mockups",
+    link: "/mockup",
     description: "High-quality product mockups to showcase your designs.",
   },
   {
     title: "Design Engineer",
     image: "/images/Phones.png",
-    link: "/design-engineer",
+    link: "/Design Engineer",
     description: "An animal learning app for kids.",
   },
   {

@@ -18,7 +18,7 @@ const projects = [
     {
     title: "Mockups",
     image: "/images/Rectangle 77 (1).png",
-    link: "/mockups",
+    link: "/mockup",
     description: "High-quality product mockups to showcase your designs.",
   },
   {
