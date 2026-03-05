@@ -24,14 +24,14 @@
 }
 
 .name {
-  font-family: "Philosopher", sans-serif;
+  font-family: "Times New Roman", serif;
   font-size: 1.6rem;
   color: #111;
 }
 
 .navLinks {
   display: flex;
-  gap: 3rem; 
+  gap: 3rem; /* increased */
   list-style: none;
 }
 
@@ -62,7 +62,7 @@
   }
 
   .navLinks {
-    gap: 1.8rem; 
+    gap: 1.8rem; /* increased */
   }
 
   .navLinks a {
