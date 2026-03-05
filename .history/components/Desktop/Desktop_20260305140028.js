@@ -3,13 +3,13 @@ import styles from "./Desktop.module.css";
 const Desktop = () => {
   return (
     <section className={styles.styleGuide}>
-      <h2 className={styles.title}>WireFrame</h2>
+      <h2 className={styles.title}>Sustainability Guide</h2>
 
       <div className={styles.imagesRow}>
         <img src="/images/horizontal_slice_1.png" alt="Section 1" />
-        <img src="/images/Desktop-2.png" alt="Section 2" />
-        <img src="/images/Desktop-3.png" alt="Section 3" />
-        <img src="/images/Desktop-4.png" alt="Section 4" />
+        <img src="/images/horizontal_slice_2.png"alt="Section 2" />
+        <img src="/images/horizontal_slice_3.png" />
+        <img src="/images/horizontal_slice_4.png"alt="Section 1" />
       </div>
 
       <p className={styles.desc}>

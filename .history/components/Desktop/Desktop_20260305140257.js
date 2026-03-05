@@ -13,7 +13,7 @@ const Desktop = () => {
       </div>
 
       <p className={styles.desc}>
-Sustainability Guide is an interactive resource that transforms recycling habits into a clear narrative of impact. By visualizing where plastic is diverted and providing real-time statistics, the platform gives users a transparent look at their environmental contribution through clean data visualization and intuitive layouts
+Sustainability Guide is an interactive resource designed to bridge the gap between individual action and environmental impact. By visualizing where recycled plastic is diverted and providing real-time data on resource conservation, the platform transforms abstract habits into a clear narrative of positive change. My goal was to provide users with a transparent look at their contribution, using clean data visualization and intuitive layouts to show the full impact of their efforts.
       </p>
     </section>
   );

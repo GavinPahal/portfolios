@@ -3,7 +3,7 @@ import styles from "./Desktop.module.css";
 const Desktop = () => {
   return (
     <section className={styles.styleGuide}>
-      <h2 className={styles.title}>WireFramesh2>
+      <h2 className={styles.title}>Sustainability Guide</h2>
 
       <div className={styles.imagesRow}>
         <img src="/images/horizontal_slice_1.png" alt="Section 1" />
@@ -13,8 +13,7 @@ const Desktop = () => {
       </div>
 
       <p className={styles.desc}>
-  hi-fi wireframe shows a clean, modern recycling platform that makes stats, tips, and impact easy to see.
-  It uses simple icons, charts, and interactive FAQs to keep things clear and engaging while encouraging sustainable habits.
+Sustainability Guide is an interactive resource that transforms recycling habits into a clear narrative of impact. By visualizing where plastic is diverted and providing real-time statistics, the platform gives users a transparent look at their environmental contribution through clean data visualization and intuitive layouts
       </p>
     </section>
   );
