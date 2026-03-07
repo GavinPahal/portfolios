@@ -18,11 +18,16 @@
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
 }
 
+.name {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.6rem;
+  color: #111;
+}
 
 .navLinks {
   display: flex;

@@ -23,6 +23,7 @@ const NavBar = () => {
     >
       <div className={styles.logoContainer}>
         <img src="/images/gavin.png" alt="Logo" className={styles.logo} />
+        <span className={styles.name}>Gavin Pahal</span>
       </div>
 
       <ul className={styles.navLinks}>
