@@ -6,7 +6,7 @@ const projects = [
     
     title: " Campaign Design",
     image: "/images/Brochure.png",
-    link: "/campaign-design",
+    link: "/Campaign",
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {

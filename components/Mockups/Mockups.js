@@ -7,7 +7,7 @@ const Mockups = () => {
         <img src="/images/Rectangle 77 (1).png" alt="Hand holding a Tiger Claw can" />
       </div>
       <div className={styles.textContainer}>
-        <h2>Mockups</h2>
+        <h2>Tiger Claw Cans</h2>
         <p>
           Tiger Claw cans draw inspiration from the culture of martial arts and the raw energy of Tiger Muay Thai in Thailand.
           The brand is designed for martial artists looking for recovery; it highlights the potency of its THC-infused formula 

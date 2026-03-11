@@ -4,9 +4,9 @@ import styles from "./Projects.module.css";
 const projects = [
   {
     
-    title: " Campaign Design",
+    title: "Internship",
     image: "/images/Brochure.png",
-    link: "/campaign-design",
+    link: "/internship",
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {
@@ -18,25 +18,25 @@ const projects = [
     {
     title: "Packaging Design",
     image: "/images/Rectangle 77 (1).png",
-    link: "/packaging-design",
+    link: "/mockups",
     description: "High-quality product mockups to showcase your designs.",
   },
   {
-    title: "Interactive Design",
+    title: "Design Engineer",
     image: "/images/Phones.png",
-    link: "/interactive-design",
+    link: "/design-engineer",
     description: "An animal learning app for kids.",
   },
   {
-    title: "Print Design",
+    title: "Print Layouts",
     image: "/images/Rectangle 65 (1).png",
-    link: "/print-design",
+    link: "/print-layouts",
     description: "Crafted magazine layouts that balance visuals and content.",
   },
   {
-    title: "Motion Work",
+    title: "Motion Graphics",
     image: "/images/Computer.png",
-    link: "/motion-work",
+    link: "/motion-graphics",
     description: "Produced motion graphics and animations, bringing ideas to life.",
   },
 ];

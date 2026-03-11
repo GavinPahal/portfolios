@@ -4,9 +4,9 @@ import styles from "./Projects.module.css";
 const projects = [
   {
     
-    title: " Campaign Design",
+    title: "Campaign / Marketing Design",
     image: "/images/Brochure.png",
-    link: "/campaign-design",
+    link: "/internship",
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {

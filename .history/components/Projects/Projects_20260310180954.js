@@ -4,9 +4,9 @@ import styles from "./Projects.module.css";
 const projects = [
   {
     
-    title: " Campaign Design",
+    title: "Internship",
     image: "/images/Brochure.png",
-    link: "/campaign-design",
+    link: "/internship",
     description: "Designed sustainable solutions at Circular Materials.",
   },
     {
@@ -28,9 +28,9 @@ const projects = [
     description: "An animal learning app for kids.",
   },
   {
-    title: "Print Design",
+    title: "Print Layouts",
     image: "/images/Rectangle 65 (1).png",
-    link: "/print-design",
+    link: "/print-layouts",
     description: "Crafted magazine layouts that balance visuals and content.",
   },
   {
