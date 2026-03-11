@@ -46,25 +46,23 @@
 }
 
 /* =============================================
-   iPhone Standard, 14 Pro (393px) & Pro  (376px – 430px)
+   iPhone Standard & Pro  (376px – 430px)
    ============================================= */
 @media screen and (min-width: 376px) and (max-width: 430px) {
   .hero {
-    padding: 20px 16px 30px;
+    padding: 0px 14px;
   }
 
   .title {
-    font-size: 44px;
-    padding-top: 30px;
+    font-size: 42px;
+    padding-top: 38px;
     margin-right: 0;
     margin-left: 0;
-    line-height: 1.2;
   }
 
   .coverImage {
     width: 100%;
     max-width: 100%;
-    border-radius: 8px;
   }
 
   .img {

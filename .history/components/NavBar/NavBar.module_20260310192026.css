@@ -1,0 +1,156 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.4s ease-out;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+
+.navLinks {
+  display: flex;
+  gap: 3rem; 
+  list-style: none;
+}
+
+.navLinks a {
+  font-family: "Philosopher", sans-serif;
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s ease;
+  font-size: 1.3rem;
+}
+
+.navLinks a:hover {
+  color: #888;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 5vw;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .name {
+    font-size: 1.2rem;
+  }
+
+  .navLinks {
+    gap: 1.8rem; 
+  }
+
+  .navLinks a {
+    font-size: 1rem;
+  }
+}
+
+/* =============================================
+   ADDED: iPhone SE / Mini  (≤ 375px)
+   ============================================= */
+@media screen and (max-width: 375px) {
+  .navbar {
+    padding: 0.6rem 4vw;
+  }
+
+  .logoContainer {
+    gap: 0.5rem;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .navLinks {
+    gap: 1rem;
+  }
+
+  .navLinks a {
+    font-size: 0.85rem;
+  }
+}
+
+/* =============================================
+   ADDED: iPhone Standard & Pro  (376px – 430px)
+   ============================================= */
+@media screen and (min-width: 376px) and (max-width: 430px) {
+  .navbar {
+    padding: 0.7rem 4vw;
+  }
+
+  .logoContainer {
+    gap: 0.6rem;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .navLinks {
+    gap: 1.4rem;
+  }
+
+  .navLinks a {
+    font-size: 0.9rem;
+  }
+}
+
+/* =============================================
+   ADDED: iPhone Pro Max / Plus  (431px – 480px)
+   ============================================= */
+@media screen and (min-width: 431px) and (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 5vw;
+  }
+
+  .logoContainer {
+    gap: 0.7rem;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .name {
+    font-size: 1.15rem;
+  }
+
+  .navLinks {
+    gap: 1.6rem;
+  }
+
+  .navLinks a {
+    font-size: 0.95rem;
+  }
+}

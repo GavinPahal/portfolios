@@ -5,6 +5,7 @@
   }
   
   .title {
+    
     text-align: center;
     padding-top: 50px;
     margin-right: 20px;
@@ -18,9 +19,10 @@
     height: auto; 
     border-radius: 10px; 
   }
+  
 
 /* =============================================
-   iPhone SE / Mini  (≤ 375px)
+   ADDED: iPhone SE / Mini  (≤ 375px)
    ============================================= */
 @media screen and (max-width: 375px) {
   .hero {
@@ -46,25 +48,23 @@
 }
 
 /* =============================================
-   iPhone Standard, 14 Pro (393px) & Pro  (376px – 430px)
+   ADDED: iPhone Standard & Pro  (376px – 430px)
    ============================================= */
 @media screen and (min-width: 376px) and (max-width: 430px) {
   .hero {
-    padding: 20px 16px 30px;
+    padding: 0px 14px;
   }
 
   .title {
-    font-size: 44px;
-    padding-top: 30px;
+    font-size: 42px;
+    padding-top: 38px;
     margin-right: 0;
     margin-left: 0;
-    line-height: 1.2;
   }
 
   .coverImage {
     width: 100%;
     max-width: 100%;
-    border-radius: 8px;
   }
 
   .img {
@@ -74,7 +74,7 @@
 }
 
 /* =============================================
-   iPhone Pro Max / Plus  (431px – 480px)
+   ADDED: iPhone Pro Max / Plus  (431px – 480px)
    ============================================= */
 @media screen and (min-width: 431px) and (max-width: 480px) {
   .hero {

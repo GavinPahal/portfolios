@@ -1,0 +1,75 @@
+.styleGuide {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.styleGuide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+    
+    .title {
+    font-family: "Philosopher", sans-serif, bold;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+/* =============================================
+   ADDED: iPhone SE / Mini  (≤ 375px)
+   ============================================= */
+@media screen and (max-width: 375px) {
+  .styleGuide {
+    padding: 24px 12px;
+  }
+
+  .styleGuide img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+/* =============================================
+   ADDED: iPhone Standard & Pro  (376px – 430px)
+   ============================================= */
+@media screen and (min-width: 376px) and (max-width: 430px) {
+  .styleGuide {
+    padding: 28px 14px;
+  }
+
+  .styleGuide img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+
+/* =============================================
+   ADDED: iPhone Pro Max / Plus  (431px – 480px)
+   ============================================= */
+@media screen and (min-width: 431px) and (max-width: 480px) {
+  .styleGuide {
+    padding: 32px 16px;
+  }
+
+  .styleGuide img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 44px;
+    margin-bottom: 22px;
+  }
+}
