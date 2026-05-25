@@ -1,0 +1,146 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.imageContainer img {
+  margin-right: 280px;
+  width: 400px;
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right: 329px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher", sans-serif, bold;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* =============================================
+   iPhone SE / Mini  (≤ 375px)
+   ============================================= */
+@media screen and (max-width: 375px) {
+  .mockups {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 14px;
+    box-sizing: border-box;
+  }
+
+  .imageContainer img {
+    margin-right: 0;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .textContainer {
+    margin: 16px auto 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 92%;
+  }
+
+  .textContainer h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .textContainer p {
+    font-size: 15px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 0 6px;
+  }
+}
+
+/* =============================================
+   iPhone Standard & 14 Pro (376px – 430px)
+   ============================================= */
+@media screen and (min-width: 376px) and (max-width: 430px) {
+  .mockups {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 16px;
+    box-sizing: border-box;
+  }
+
+  .imageContainer img {
+    margin-right: 0;
+    width: 100%;
+    max-width: 320px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .textContainer {
+    margin: 20px auto 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 92%;
+  }
+
+  .textContainer h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+  }
+
+  .textContainer p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    padding: 0 8px;
+  }
+}
+
+/* =============================================
+   iPhone 14 Pro Max / Plus  (431px – 480px)
+   ============================================= */
+@media screen and (min-width: 431px) and (max-width: 480px) {
+  .mockups {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px;
+    box-sizing: border-box;
+  }
+
+  .imageContainer img {
+    margin-right: 0;
+    width: 100%;
+    max-width: 380px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .textContainer {
+    margin: 24px auto 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 90%;
+  }
+
+  .textContainer h2 {
+    font-size: 42px;
+    margin-bottom: 14px;
+    line-height: 1.2;
+  }
+
+  .textContainer p {
+    font-size: 19px;
+    line-height: 1.75;
+    text-align: justify;
+    padding: 0 10px;
+  }
+}

@@ -4,11 +4,10 @@
 
   background-image: url("/images/Banner.png");
 
+  /* PERFECT DESKTOP FIT */
   background-size: 100vw auto;
 
-  /* MOVE DOWN + CENTER */
-  background-position: center 60%;
-
+  background-position: center top;
   background-repeat: no-repeat;
 
   overflow: hidden;

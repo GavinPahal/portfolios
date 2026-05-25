@@ -5,7 +5,7 @@ const HeroSection = () => {
     <section
       className={styles.hero}
       style={{
-        backgroundImage: "url('/images/ban.png')"
+        backgroundImage: "url('/images/Banner.png')"
       }}
     ></section>
   );

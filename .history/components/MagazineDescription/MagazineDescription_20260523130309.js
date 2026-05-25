@@ -4,7 +4,7 @@ const Mockups = () => {
   return (
     <section className={styles.mockups}>
       <div className={styles.imageContainer}>
-        <img src="/images/Rectangle 65 (1).png" alt="Magazine Cover" />
+        <img src="/images/Rectangle 65 (1).png" alt="Hand holding a Tiger Claw can" />
       </div>
       <div className={styles.textContainer}>
         <h2>Magazine</h2>

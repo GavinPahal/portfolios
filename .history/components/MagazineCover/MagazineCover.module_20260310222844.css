@@ -1,0 +1,103 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.imageContainer img {
+  margin-right: 280px;
+  width: 400px;
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right: 329px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher", sans-serif, bold;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* =============================================
+   ALL iPhones — shared stacking base (≤ 480px)
+   ============================================= */
+@media screen and (max-width: 480px) {
+  .mockups {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .imageContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imageContainer img {
+    margin: 0 auto !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    display: block;
+  }
+
+  .textContainer {
+    width: 100% !important;
+    max-width: 92% !important;
+    margin: 20px auto 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0;
+  }
+
+  .textContainer h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .textContainer p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    padding: 0 8px;
+  }
+}
+
+/* =============================================
+   iPhone SE / Mini — smaller tweaks (≤ 375px)
+   ============================================= */
+@media screen and (max-width: 375px) {
+  .mockups {
+    padding: 20px 14px;
+  }
+
+  .imageContainer img {
+    max-width: 300px !important;
+  }
+
+  .textContainer h2 {
+    font-size: 30px;
+  }
+
+  .textContainer p {
+    font-size: 15px;
+    padding: 0 6px;
+  }
+}

@@ -1,0 +1,105 @@
+.mockups {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.imageContainer img {
+  margin-right: 280px;
+  width: 400px;
+}
+
+.textContainer {
+  margin-bottom: 150px;
+  margin-right: 329px;
+  max-width: 500px;
+}
+
+.textContainer h2 {
+  font-family: "Philosopher", sans-serif, bold;
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.textContainer p {
+  font-family: "Philosopher";
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* =============================================
+   ALL iPhones (≤ 480px)
+   ============================================= */
+@media screen and (max-width: 480px) {
+  .mockups {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 16px;
+    box-sizing: border-box;
+  }
+
+  .imageContainer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imageContainer img {
+    display: block;
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
+    /* kill the desktop margin */
+    margin-right: auto;
+  }
+
+  .textContainer {
+    width: 90%;
+    max-width: 350px;
+    margin: 20px auto 0;
+    /* kill the desktop margins */
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .textContainer h2 {
+    font-size: 36px;
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+
+  .textContainer p {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    padding: 0 8px;
+  }
+}
+
+/* =============================================
+   iPhone SE / Mini (≤ 375px)
+   ============================================= */
+@media screen and (max-width: 375px) {
+  .mockups {
+    padding: 20px 14px;
+  }
+
+  .imageContainer img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .textContainer {
+    max-width: 300px;
+  }
+
+  .textContainer h2 {
+    font-size: 30px;
+  }
+
+  .textContainer p {
+    font-size: 15px;
+    padding: 0 6px;
+  }
+}
