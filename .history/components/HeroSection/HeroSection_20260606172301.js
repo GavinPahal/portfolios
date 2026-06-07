@@ -1,7 +1,4 @@
 import { useEffect, useState } from "react";
-import styles from "./HeroSection.module.css";
-
-const HeroSection = () => {
   const words = ["GAVIN PAHAL"];
   const [displayText, setDisplayText] = useState([""]);
   const [index, setIndex] = useState(0);
@@ -14,14 +11,16 @@ const HeroSection = () => {
         setDisplayText([displayText[0] + words[0][index]]);
         setIndex(index + 1);
       }, 100);
+
       return () => clearTimeout(timeout);
     }
-  }, [index]);
+  }, [index, displayText, words]);
 
   // Scroll tracking
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -29,7 +28,12 @@ const HeroSection = () => {
   const moveUp = Math.min(scrollY / 3, 100);
 
   return (
-    <section className={styles.hero}>
+    <section
+      className={styles.hero}
+      style={{
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(${heroBanner})`
+      }}
+    >
       <div
         className={styles.heroText}
         style={{
@@ -41,13 +45,21 @@ const HeroSection = () => {
           {displayText[0]}
         </span>
 
+        <h1 className={styles.mainHeading}>
+          SoftMoc Hero Banner Concept
+        </h1>
+
         <p className={styles.subText}>
-          A digital designer creating clean, intuitive experiences
-          that feel natural to use. Blending graphic design and UI/UX to simplify
-          ideas, solve real problems, and design with clarity, purpose, and intention.
+          A homepage hero banner concept inspired by comfort-first footwear
+          brands, blending modern UI design with strong retail visual storytelling.
         </p>
 
-        <div className={styles.scrollArrow} />
+        <a
+          href="#projects"
+          className={styles.ctaButton}
+        >
+          View Project
+        </a>
       </div>
     </section>
   );

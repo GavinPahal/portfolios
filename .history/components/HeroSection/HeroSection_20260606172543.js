@@ -14,41 +14,27 @@ const HeroSection = () => {
         setDisplayText([displayText[0] + words[0][index]]);
         setIndex(index + 1);
       }, 100);
+
       return () => clearTimeout(timeout);
     }
-  }, [index]);
+  }, [index, displayText, words]);
 
   // Scroll tracking
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
+
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const fadeOut = Math.max(0, 1 - scrollY / 300);
-  const moveUp = Math.min(scrollY / 3, 100);
-
   return (
-    <section className={styles.hero}>
-      <div
-        className={styles.heroText}
-        style={{
-          opacity: fadeOut,
-          transform: `translateY(-${moveUp}px)`
-        }}
-      >
-        <span className={styles.highlightedText}>
-          {displayText[0]}
-        </span>
-
-        <p className={styles.subText}>
-          A digital designer creating clean, intuitive experiences
-          that feel natural to use. Blending graphic design and UI/UX to simplify
-          ideas, solve real problems, and design with clarity, purpose, and intention.
-        </p>
-
-        <div className={styles.scrollArrow} />
-      </div>
+    <section
+      className={styles.hero}
+      style={{
+        backgroundImage: "url('/images/Banner.png')"
+      }}
+    >
     </section>
   );
 };

@@ -43,7 +43,7 @@ const HeroSection = () => {
 
         <p className={styles.subText}>
           A digital designer creating clean, intuitive experiences
-          that feel natural to use. Blending graphic design and UI/UX to simplify
+          that feel natural to use. I blend graphic design and UI/UX to simplify
           ideas, solve real problems, and design with clarity, purpose, and intention.
         </p>
 
