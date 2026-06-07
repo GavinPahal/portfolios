@@ -8,7 +8,7 @@
   justify-content: center;
   background-color: #fff;
   overflow: hidden;
-  padding: 80px 8vw 0;
+  padding: 0 8vw;
 }
 
 .heroText {
@@ -100,7 +100,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 12vh 6vw 0;
+    padding: 12vh 6vw;
   }
 
   .heroText {
